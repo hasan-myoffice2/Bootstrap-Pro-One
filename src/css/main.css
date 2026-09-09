@@ -4,6 +4,9 @@
  * Copyright 2011-2025 The Bootstrap Authors
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap");
 :root,
 [data-bs-theme=light] {
   --bs-blue: #0d6efd;
@@ -12079,6 +12082,205 @@ textarea.form-control-lg {
 @media (min-width: 1400px) {
   .custom-navbar .navbar-container {
     max-width: 1320px;
+  }
+}
+
+.hero-section {
+  background-color: var(--bgOne);
+  padding: 4rem 0;
+}
+.hero-section .hero-subtitle {
+  font-size: 12px;
+  letter-spacing: 2px;
+  font-family: var(--monospace);
+  color: var(--brandColor);
+  margin-left: 2rem;
+  position: relative;
+}
+.hero-section .hero-subtitle::before {
+  content: "";
+  width: 25px;
+  background-color: var(--brandColor);
+  height: 1px;
+  top: 50%;
+  left: -30px;
+  position: absolute;
+}
+.hero-section .hero-title {
+  font-size: var(--headerFS);
+  font-family: var(--frauncesFont);
+  font-weight: 600;
+  line-height: 4.5rem;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+.hero-section .description {
+  max-width: 450px;
+  font-size: var(--peraFS);
+  font-family: var(--interFont);
+  line-height: 1.8rem;
+  color: var(--secondaryColor);
+  margin-bottom: 1.5rem;
+}
+.hero-section .hero-btn .btn-one {
+  background-color: var(--brandColor);
+  color: #fff;
+  font-size: 16px;
+  padding: 0.8rem 1.5rem;
+  font-weight: 400;
+  font-family: var(--interFont);
+  border-radius: 3rem;
+  transition: all 0.4s ease;
+}
+.hero-section .hero-btn .btn-one:hover {
+  color: #fff;
+  background-color: #0B5ED7;
+}
+.hero-section .hero-btn .btn-two {
+  padding: 0.8rem 1.5rem;
+  border: 1px solid var(--primaryColor) !important;
+  color: #262626;
+  background-color: transparent !important;
+  font-weight: 500;
+  font-family: var(--interFont);
+  border-radius: 3rem;
+  transition: all 0.4s ease;
+}
+.hero-section .hero-btn .btn-two:hover {
+  background-color: var(--primaryColor) !important;
+  color: #fff;
+}
+.hero-section .heroImage {
+  width: 90%;
+  height: 600px;
+  object-fit: cover;
+  border-radius: 1rem;
+}
+@media (max-width: 1199.98px) {
+  .hero-section .hero-title {
+    font-size: 52px;
+    line-height: 1.15;
+  }
+  .hero-section .description {
+    font-size: 16px;
+    line-height: 1.7rem;
+    max-width: 420px;
+  }
+  .hero-section .heroImage {
+    width: 95%;
+    height: 550px;
+  }
+}
+@media (max-width: 991.98px) {
+  .hero-section {
+    padding: 3.5rem 0;
+  }
+  .hero-section .hero-title {
+    font-size: 46px;
+    line-height: 1.15;
+    margin-top: 1.25rem;
+  }
+  .hero-section .description {
+    max-width: 100%;
+    font-size: 16px;
+    line-height: 1.7rem;
+  }
+  .hero-section .heroImage {
+    width: 100%;
+    height: 500px;
+  }
+  .hero-section .hero-btn {
+    gap: 0.75rem !important;
+  }
+  .hero-section .hero-btn .btn-one,
+  .hero-section .hero-btn .btn-two {
+    padding: 0.75rem 1.25rem;
+    font-size: 15px;
+  }
+}
+@media (max-width: 767.98px) {
+  .hero-section {
+    padding: 3rem 0;
+  }
+  .hero-section .hero-subtitle {
+    font-size: 11px;
+    letter-spacing: 1.8px;
+    margin-left: 1.75rem;
+  }
+  .hero-section .hero-subtitle::before {
+    width: 22px;
+    left: -27px;
+  }
+  .hero-section .hero-title {
+    font-size: 40px;
+    line-height: 1.15;
+    margin-top: 1.25rem;
+    margin-bottom: 1.25rem;
+  }
+  .hero-section .description {
+    font-size: 15px;
+    line-height: 1.65rem;
+    margin-bottom: 1.5rem;
+  }
+  .hero-section .hero-btn {
+    flex-wrap: wrap;
+    gap: 0.75rem !important;
+  }
+  .hero-section .hero-btn .btn-one,
+  .hero-section .hero-btn .btn-two {
+    padding: 0.7rem 1.2rem;
+    font-size: 14px;
+  }
+  .hero-section .heroImage {
+    width: 100%;
+    height: 450px;
+    margin-top: 2.5rem;
+  }
+}
+@media (max-width: 575.98px) {
+  .hero-section {
+    padding: 2.5rem 0;
+  }
+  .hero-section .hero-subtitle {
+    font-size: 10px;
+    letter-spacing: 1.5px;
+  }
+  .hero-section .hero-title {
+    font-size: 34px;
+    line-height: 1.15;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+  .hero-section .description {
+    font-size: 14px;
+    line-height: 1.6rem;
+  }
+  .hero-section .hero-btn .btn-one,
+  .hero-section .hero-btn .btn-two {
+    padding: 0.65rem 1rem;
+    font-size: 13px;
+  }
+  .hero-section .heroImage {
+    height: 380px;
+    margin-top: 2rem;
+    border-radius: 0.75rem;
+  }
+}
+@media (max-width: 400px) {
+  .hero-section .hero-title {
+    font-size: 30px;
+  }
+  .hero-section .description {
+    font-size: 13px;
+    line-height: 1.5rem;
+  }
+  .hero-section .hero-btn .btn-one,
+  .hero-section .hero-btn .btn-two {
+    padding: 0.6rem 0.9rem;
+    font-size: 12px;
+  }
+  .hero-section .heroImage {
+    height: 330px;
   }
 }
 
