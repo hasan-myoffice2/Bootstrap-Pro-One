@@ -11859,105 +11859,110 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
+:root {
+  --headerFS: 70px;
+  --primaryFS: 44px;
+  --peraFS: 17px;
+  --hoverHeaderFS: 16px;
+  --hoverFS: 14px;
+  --brandColor: #1f5a44;
+  --primaryColor: #262626;
+  --secondaryColor: #464a52;
+  --navBG: #faf9f6;
+  --bgOne: #f2f0ea;
+  --bgTwo: #faf9f6;
+  --cardBG: #ffffff;
+  --footerText: #cfd2d6;
+  --btnHover: #0b5ed7;
+  --frauncesFont: "Fraunces", serif;
+  --interFont: "Inter", sans-serif;
+  --monospace: "Space Mono", monospace;
+  --NavShadow: 0 4px 16px rgba(0, 0, 0, 0.16);
+  --cardShadow: 0 8px 24px 0 rgba(0, 0, 0, 0.16);
+}
+
 /* Navbar */
 .custom-navbar {
   padding: 24px 16px;
-  background: #fff;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  background: var(--navBG);
+  box-shadow: var(--NavShadow);
 }
-
-.navbar-container {
+.custom-navbar .navbar-container {
   max-width: 1140px;
   margin: 0 auto;
 }
-
-.brand-name img {
+.custom-navbar .brand-name img {
   max-width: 150px;
   height: auto;
 }
-
-/* Desktop menu */
-.main-menu {
+.custom-navbar .main-menu {
   gap: 40px;
 }
-
-.main-menu > li {
+.custom-navbar .main-menu > li {
   position: relative;
 }
-
-.main-menu > li > a {
-  color: #555;
+.custom-navbar .main-menu > li > a {
+  color: var(--primaryColor);
   text-decoration: none;
-  font-weight: 500;
+  font-weight: 600;
   display: flex;
   align-items: center;
+  font-family: var(--interFont);
   gap: 5px;
+  font-size: var(--peraFS);
 }
-
-.main-menu > li > a:hover,
-.main-menu > li > a.active {
-  color: #7c3aed;
+.custom-navbar .main-menu > li > a:hover, .custom-navbar .main-menu > li > a.active {
+  color: var(--brandColor);
 }
-
-/* Chevron */
-.main-menu > li > a .chevron {
+.custom-navbar .main-menu > li > a .chevron {
   font-size: 12px;
   transition: transform 0.3s ease;
 }
-
-.main-menu > li:hover > a .chevron {
+.custom-navbar .main-menu > li:hover > a .chevron {
   transform: rotate(180deg);
 }
-
-/* Normal Dropdown */
-.custom-dropdown {
+.custom-navbar .main-menu > li:hover .custom-dropdown,
+.custom-navbar .main-menu > li:hover .mega-menu {
+  visibility: visible;
+  opacity: 1;
+  transform: translateY(0);
+}
+.custom-navbar .main-menu .custom-dropdown {
   position: absolute;
   top: 100%;
   left: 0;
   margin-top: 20px;
   width: 220px;
   padding: 12px;
-  background: #fff;
-  border: 1px solid #ddd;
+  background: var(--cardBG);
   border-radius: 8px;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  box-shadow: var(--cardShadow);
   visibility: hidden;
   opacity: 0;
   transform: translateY(10px);
   transition: all 0.3s ease;
   z-index: 1000;
 }
-
-.dropdown-item-custom {
+.custom-navbar .main-menu .custom-dropdown .dropdown-item-custom {
   display: block;
   padding: 12px 20px;
-  color: #555;
+  color: var(--secondaryColor);
   text-decoration: none;
   border-radius: 4px;
   transition: all 0.15s ease;
 }
-
-.dropdown-item-custom:hover {
-  color: #7c3aed;
-  background: #f5f3ff;
+.custom-navbar .main-menu .custom-dropdown .dropdown-item-custom:hover {
+  color: var(--brandColor);
+  background: var(--bgOne);
 }
-
-.main-menu > li:hover .custom-dropdown {
-  visibility: visible;
-  opacity: 1;
-  transform: translateY(0);
-}
-
-/* Mega Menu */
-.mega-menu {
+.custom-navbar .main-menu .mega-menu {
   position: absolute;
   top: 100%;
   left: -400px;
   margin-top: 20px;
   width: 1000px;
   padding: 40px 24px;
-  background: #fff;
-  border: 1px solid #ddd;
+  background: var(--cardBG);
   border-radius: 8px;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
   visibility: hidden;
@@ -11966,54 +11971,40 @@ textarea.form-control-lg {
   transition: all 0.3s ease;
   z-index: 1000;
 }
-
-.main-menu > li:hover .mega-menu {
-  visibility: visible;
-  opacity: 1;
-  transform: translateY(0);
-}
-
-.mega-title {
-  color: #7c3aed;
+.custom-navbar .main-menu .mega-menu .mega-title {
+  color: var(--brandColor);
   font-family: Georgia, serif;
   font-size: 18px;
   font-weight: 600;
   word-spacing: 8px;
 }
-
-.mega-list {
+.custom-navbar .main-menu .mega-menu .mega-list {
   margin-top: 28px;
   padding: 0;
   list-style: none;
 }
-
-.mega-list li {
+.custom-navbar .main-menu .mega-menu .mega-list li {
   margin-bottom: 12px;
-  color: #666;
+  color: var(--secondaryColor);
   cursor: pointer;
   transition: color 0.15s ease;
 }
-
-.mega-list li:hover {
-  color: #7c3aed;
+.custom-navbar .main-menu .mega-menu .mega-list li:hover {
+  color: var(--brandColor);
 }
-
-.mega-image {
+.custom-navbar .main-menu .mega-menu .mega-image {
   width: 100%;
   height: 100%;
   min-height: 200px;
   object-fit: cover;
   border-radius: 16px;
 }
-
-/* Action buttons */
-.nav-actions {
+.custom-navbar .nav-actions {
   display: flex;
   gap: 12px;
-  color: #555;
+  color: var(--primaryColor);
 }
-
-.nav-action {
+.custom-navbar .nav-actions .nav-action {
   width: 40px;
   height: 40px;
   border: 1px solid #e6e3db;
@@ -12024,23 +12015,20 @@ textarea.form-control-lg {
   position: relative;
   transition: all 0.3s ease;
 }
-
-.nav-action:hover {
-  border-color: #7c3aed;
-  color: #7c3aed;
+.custom-navbar .nav-actions .nav-action:hover {
+  border-color: var(--brandColor);
+  color: var(--brandColor);
 }
-
-.nav-action i {
+.custom-navbar .nav-actions .nav-action i {
   font-size: 16px;
 }
-
-.badge-custom {
+.custom-navbar .nav-actions .nav-action .badge-custom {
   position: absolute;
   top: -10px;
   right: 0;
   width: 20px;
   height: 20px;
-  background: #7c3aed;
+  background: var(--brandColor);
   color: #fff;
   font-size: 11px;
   display: flex;
@@ -12048,52 +12036,48 @@ textarea.form-control-lg {
   justify-content: center;
   border-radius: 50%;
 }
-
-/* Mobile */
-.mobile-menu-btn {
+.custom-navbar .mobile-menu-btn {
   font-size: 24px;
   color: #555;
   border: 0;
   background: transparent;
   padding: 0;
 }
-
-/* Bootstrap lg breakpoint */
 @media (min-width: 992px) {
-  .mobile-menu-btn {
+  .custom-navbar .mobile-menu-btn {
     display: none;
   }
-  .mobile-logo {
+  .custom-navbar .mobile-logo {
     display: block;
   }
-  .main-menu {
+  .custom-navbar .main-menu {
     display: flex;
   }
-  .desktop-action {
+  .custom-navbar .desktop-action {
     display: flex;
   }
 }
 @media (max-width: 991.98px) {
-  .main-menu {
+  .custom-navbar .main-menu {
     display: none;
   }
-  .desktop-action {
+  .custom-navbar .desktop-action {
     display: none;
   }
   .custom-navbar {
     padding: 20px 16px;
   }
-  .navbar-container {
+  .custom-navbar .navbar-container {
     max-width: 100%;
   }
 }
 @media (min-width: 1200px) {
-  .navbar-container {
+  .custom-navbar .navbar-container {
     max-width: 1140px;
   }
 }
 @media (min-width: 1400px) {
-  .navbar-container {
+  .custom-navbar .navbar-container {
     max-width: 1320px;
   }
 }
