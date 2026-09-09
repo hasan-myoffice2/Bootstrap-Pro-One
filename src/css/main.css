@@ -11875,7 +11875,9 @@ textarea.form-control-lg {
   --bgOne: #f2f0ea;
   --bgTwo: #faf9f6;
   --cardBG: #ffffff;
-  --footerText: #cfd2d6;
+  --footerTextColor: #cfd2d6;
+  --primaryColor: #262626;
+  --footerBgColor: #14161A;
   --btnHover: #0b5ed7;
   --frauncesFont: "Fraunces", serif;
   --interFont: "Inter", sans-serif;
@@ -12282,6 +12284,67 @@ textarea.form-control-lg {
   .hero-section .heroImage {
     height: 330px;
   }
+}
+
+.footer-section {
+  background-color: var(--footerBgColor);
+  color: var(--footerText);
+  font-family: var(--font-interFont);
+}
+.footer-section .footer-description {
+  max-width: 350px;
+  color: rgba(255, 255, 255, 0.5019607843);
+  font-size: var(--peraFS);
+  line-height: 1.8;
+}
+.footer-section .footer-title {
+  margin: 0;
+  font-size: 15px;
+  font-weight: 500;
+  color: var(--cardBG);
+  letter-spacing: 1px;
+}
+.footer-section .footer-links {
+  margin-top: 38px;
+}
+.footer-section .footer-links li {
+  margin-bottom: 12px;
+}
+.footer-section .footer-links li a {
+  color: var(--footerTextColor);
+  font-size: var(--footerText);
+  text-decoration: none;
+  transition: 0.3s;
+}
+.footer-section .footer-links li a:hover {
+  color: #fff;
+}
+.footer-section .footer-social a {
+  width: 40px;
+  height: 40px;
+  border: 1px solid rgba(255, 255, 255, 0.5019607843);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  text-decoration: none;
+  transition: all 0.4s ease;
+}
+.footer-section .footer-social a:hover {
+  background-color: var(--brandColor);
+  border: transparent;
+}
+.footer-section .footer-bottom {
+  border-top: 1px solid rgba(255, 255, 255, 0.1019607843);
+}
+.footer-section .footer-bottom p,
+.footer-section .footer-bottom .payment-icons {
+  color: #8b8f96;
+  font-size: 15px;
+}
+.footer-section .footer-bottom .payment-icons {
+  font-size: 16px;
 }
 
 /*# sourceMappingURL=main.css.map */
