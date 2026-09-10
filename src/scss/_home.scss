@@ -1,38 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&display=swap');
 
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
-
 @import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap');
 
-:root {
-   --headerFS: 70px;
-   --primaryFS: 44px;
-   --peraFS: 17px;
-   --hoverHeaderFS: 16px;
-   --hoverFS: 14px;
-
-   // Colors
-   --brandColor: #1f5a44;
-   --primaryColor: #262626;
-   --secondaryColor: #464a52;
-   --navBG: #faf9f6;
-   --bgOne: #f2f0ea;
-   --bgTwo: #faf9f6;
-   --cardBG: #ffffff;
-   --footerTextColor: #cfd2d6;
-   --primaryColor: #262626;
-   --footerBgColor: #14161A;
-   --btnHover: #0b5ed7;
-
-   // Fonts
-   --frauncesFont: "Fraunces", serif;
-   --interFont: "Inter", sans-serif;
-   --monospace: "Space Mono", monospace;
-
-   // Shadow
-   --NavShadow: 0 4px 16px rgba(0, 0, 0, 0.16);
-   --cardShadow: 0 8px 24px 0 rgba(0, 0, 0, 0.16);
-}
+@import "variable";
 
 /* Navbar */
 .custom-navbar {
