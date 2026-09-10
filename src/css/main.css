@@ -12286,6 +12286,170 @@ textarea.form-control-lg {
   }
 }
 
+.review-section {
+  padding: 64px 0;
+  background-color: var(--bgOne);
+}
+.review-section .section-heading {
+  margin-bottom: var(--primaryFS);
+  text-align: center;
+}
+.review-section .section-heading__label {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  margin-bottom: 16px;
+}
+.review-section .section-heading__label span {
+  width: 24px;
+  height: 1px;
+  background: var(--brandColor);
+}
+.review-section .section-heading__label small, .review-section .section-heading__label .small {
+  font-family: var(--fontMonoSpace);
+  font-size: 12px;
+  letter-spacing: 3px;
+  font-weight: 500;
+  color: var(--brandColor);
+  text-transform: uppercase;
+}
+.review-section .section-heading h2, .review-section .section-heading .h2 {
+  margin: 0;
+  color: var(--primaryColor);
+  font-family: "Fraunces", serif;
+  font-size: var(--primaryFS);
+  font-weight: 600;
+  line-height: 1.1;
+}
+.review-section .review-slider {
+  position: relative;
+}
+.review-section .review-slider .swiper-slide {
+  height: auto;
+}
+.review-section .review-slider .review-card {
+  height: 100%;
+  padding: 30px;
+  border-radius: 1rem;
+}
+.review-section .review-slider .review-card__stars {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 16px;
+  color: #c99745;
+  font-size: 15px;
+}
+.review-section .review-slider .review-card p {
+  margin-bottom: 24px;
+  color: var(--primaryColor);
+  font-family: var(--interFont);
+  font-size: var(--peraFS);
+  font-weight: 500;
+  line-height: 1.8rem;
+}
+.review-section .review-slider .review-card__user {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.review-section .review-slider .review-card__user img {
+  width: 44px;
+  height: 44px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+.review-section .review-slider .review-card__user h3, .review-section .review-slider .review-card__user .h3 {
+  margin: 0;
+  color: var(--primaryColor);
+  font-family: var(--interFont);
+  font-size: 18px;
+  font-weight: 700;
+}
+.review-section .review-slider .review-card__user span {
+  color: var(--secondaryColor);
+  font-family: var(--interFont);
+  font-size: 14px;
+}
+.review-section .review-slider .testimonial-pagination {
+  margin-top: 32px;
+  text-align: center;
+}
+.review-section .review-slider .testimonial-next {
+  position: absolute;
+  right: 0;
+  top: 90%;
+  z-index: 2;
+  width: 40px;
+  height: 40px;
+  margin-top: 15px;
+  border: 1px solid var(--brandColor);
+  border-radius: 50%;
+  background: transparent;
+  color: #1f5c4d;
+  transition: 0.3s;
+}
+.review-section .review-slider .testimonial-next:hover {
+  background: var(--brandColor);
+  color: #fff;
+}
+.review-section .features {
+  margin-top: 64px;
+  padding: 32px 0;
+  border-top: 1px solid #deddd8;
+  border-bottom: 1px solid #deddd8;
+}
+.review-section .features .feature {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+.review-section .features .feature__icon {
+  display: flex;
+  flex-shrink: 0;
+  align-items: center;
+  justify-content: center;
+  width: 52px;
+  height: 52px;
+  border: 1px solid #deddd8;
+  border-radius: 12px;
+  color: var(--brandColor);
+  font-size: 24px;
+}
+.review-section .features .feature h3, .review-section .features .feature .h3 {
+  margin: 0;
+  color: var(--primaryColor);
+  font-family: var(--interFont);
+  font-size: 18px;
+  font-weight: 700;
+}
+.review-section .features .feature p {
+  margin: 4px 0 0;
+  color: var(--peraSeondColor);
+  font-family: var(--interFont);
+  font-size: 14px;
+  font-weight: 500;
+}
+@media (max-width: 991.98px) {
+  .review-section .section-heading h2, .review-section .section-heading .h2 {
+    font-size: 36px;
+  }
+}
+@media (max-width: 575.98px) {
+  .review-section {
+    padding: 48px 16px;
+  }
+  .review-section .section-heading h2, .review-section .section-heading .h2 {
+    font-size: 30px;
+  }
+  .review-section .review-card {
+    padding: 24px;
+  }
+  .review-section .testimonial-next {
+    right: 0;
+  }
+}
+
 .newsletter-section {
   padding: 5rem 0;
   background: #fff;
