@@ -135,10 +135,171 @@
    </section>
    <!-- Hero Section End -->
 
+   <!-- Coundown Section Start -->
+   <section class="d-flex align-items-center justify-content-center cowndown-section">
+      <!-- Main Container -->
+      <div class="container">
+         <div class="row g-4">
+
+            <!-- ================= LEFT SALE CARD ================= -->
+            <div class="col-lg-7">
+               <div class="sale-card position-relative overflow-hidden rounded-4 h-100">
+
+                  <!-- Background Image -->
+                  <img
+                     src="https://images.unsplash.com/photo-1596462502278-27bfdc403348?auto=format&fit=crop&w=1400&q=85"
+                     alt="Studio Sale" class="position-absolute top-0 start-0 w-100 h-100 object-fit-cover sale-image">
+
+                  <!-- Dark Gradient -->
+                  <div class="position-absolute top-0 start-0 w-100 h-100 sale-overlay"></div>
+
+                  <!-- Content -->
+                  <div class="position-relative z-1 d-flex flex-column justify-content-center h-100 px-4 py-5 px-sm-5">
+
+                     <!-- Small Heading -->
+                     <p class="mb-3 text-uppercase text-white sale-label">
+                        Limited Time
+                     </p>
+
+                     <!-- Title -->
+                     <h1 class="sale-title text-white mb-0">
+                        The Studio Sale — up to 40% off
+                     </h1>
+
+                     <!-- Countdown -->
+                     <div class="mt-4 row g-2 countdown-box">
+
+                        <!-- Days -->
+                        <div class="col-3">
+                           <div
+                              class="countdown-item bg-white rounded-3 d-flex flex-column align-items-center justify-content-center">
+                              <span id="days" class=" fw-semibold countdown-number text-peraSeondColor">
+                                 00
+                              </span>
+                              <span class="mt-2 text-uppercase fw-medium countdown-label text-hoverPeraColor">
+                                 Days
+                              </span>
+                           </div>
+                        </div>
+
+                        <!-- Hours -->
+                        <div class="col-3">
+                           <div
+                              class="countdown-item bg-white rounded-3 d-flex flex-column align-items-center justify-content-center">
+                              <span id="hours" class=" fw-semibold countdown-number text-peraSeondColor">
+                                 00
+                              </span>
+                              <span class="mt-2 text-uppercase fw-medium countdown-label text-hoverPeraColor">
+                                 Hrs
+                              </span>
+                           </div>
+                        </div>
+
+                        <!-- Minutes -->
+                        <div class="col-3">
+                           <div
+                              class="countdown-item bg-white rounded-3 d-flex flex-column align-items-center justify-content-center">
+                              <span id="minutes" class=" fw-semibold countdown-number text-peraSeondColor">
+                                 00
+                              </span>
+                              <span class="mt-2 text-uppercase fw-medium countdown-label text-hoverPeraColor">
+                                 Min
+                              </span>
+                           </div>
+                        </div>
+
+                        <!-- Seconds -->
+                        <div class="col-3">
+                           <div
+                              class="countdown-item bg-white rounded-3 d-flex flex-column align-items-center justify-content-center">
+                              <span id="seconds" class=" fw-semibold countdown-number text-peraSeondColor">
+                                 00
+                              </span>
+                              <span class="mt-2 text-uppercase fw-medium countdown-label text-hoverPeraColor">
+                                 Sec
+                              </span>
+                           </div>
+                        </div>
+
+                     </div>
+
+                     <!-- Button -->
+                     <div class="mt-4">
+                        <a href="#" class="btn sale-btn bg-white rounded-pill fw-semibold text-black">
+                           Shop the sale
+                        </a>
+                     </div>
+
+                  </div>
+               </div>
+            </div>
+
+            <!-- ================= RIGHT CARDS ================= -->
+            <div class="col-lg-5">
+
+               <div class="d-grid gap-4 h-100">
+
+                  <!-- Top Card -->
+                  <div class="promo-card position-relative overflow-hidden rounded-3">
+
+                     <img
+                        src="https://images.unsplash.com/photo-1543163521-1bf539c55dd2?auto=format&fit=crop&w=1000&q=85"
+                        alt="New Arrivals"
+                        class="position-absolute top-0 start-0 w-100 h-100 object-fit-cover sale-image">
+
+                     <!-- Overlay -->
+                     <div class="position-absolute top-0 start-0 w-100 h-100 promo-overlay"></div>
+
+                     <!-- Text -->
+                     <div class="position-absolute bottom-0 start-0 z-1 text-white p-4">
+                        <h2 class="mb-0 promo-title">
+                           New arrivals
+                        </h2>
+
+                        <a href="#" class="mt-2 d-inline-block text-white promo-link">
+                           Shop the latest drop →
+                        </a>
+                     </div>
+
+                  </div>
+
+                  <!-- Bottom Card -->
+                  <div class="promo-card position-relative overflow-hidden rounded-3">
+
+                     <img
+                        src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=1000&q=85"
+                        alt="Gift Guide"
+                        class="position-absolute top-0 start-0 w-100 h-100 object-fit-cover sale-image">
+
+                     <!-- Overlay -->
+                     <div class="position-absolute top-0 start-0 w-100 h-100 promo-overlay"></div>
+
+                     <!-- Text -->
+                     <div class="position-absolute bottom-0 start-0 z-1 text-white p-4">
+                        <h2 class="mb-0 promo-title">
+                           Gift guide
+                        </h2>
+
+                        <a href="#" class="mt-2 d-inline-block text-white promo-link">
+                           Curated bundles from $50 →
+                        </a>
+                     </div>
+
+                  </div>
+
+               </div>
+            </div>
+
+         </div>
+      </div>
+   </section>
+
+
+   <!-- Coundown Section End -->
+
    <!-- Clients Carousel One Start -->
    <section class="review-section">
       <div class="container">
-
          <!-- Section Heading -->
          <div class="section-heading">
             <div class="section-heading__label">
@@ -147,13 +308,10 @@
             </div>
             <h2>Loved by 12,000+ customers</h2>
          </div>
-
          <!-- Swiper -->
          <div class="review-slider">
-
             <div class="swiper testimonialSwiper">
                <div class="swiper-wrapper">
-
                   <!-- Card 1 -->
                   <div class="swiper-slide">
                      <div class="review-card card">
@@ -164,15 +322,12 @@
                            <i class="bi bi-star-fill"></i>
                            <i class="bi bi-star-fill"></i>
                         </div>
-
                         <p>
                            "Sizing guide was spot-on and the return process took less than five minutes when I needed to
                            exchange."
                         </p>
-
                         <div class="review-card__user">
                            <img src="https://i.pravatar.cc/100?img=47" alt="Maria Chen">
-
                            <div>
                               <h3>Maria Chen</h3>
                               <span>Verified buyer</span>
@@ -191,15 +346,12 @@
                            <i class="bi bi-star-fill"></i>
                            <i class="bi bi-star-fill"></i>
                         </div>
-
                         <p>
                            "Sizing guide was spot-on and the return process took less than five minutes when I needed to
                            exchange."
                         </p>
-
                         <div class="review-card__user">
                            <img src="https://i.pravatar.cc/100?img=12" alt="Daniel Osei">
-
                            <div>
                               <h3>Daniel Osei</h3>
                               <span>Verified buyer</span>
@@ -207,7 +359,6 @@
                         </div>
                      </div>
                   </div>
-
                   <!-- Card 3 -->
                   <div class="swiper-slide">
                      <div class="review-card card">
@@ -218,15 +369,12 @@
                            <i class="bi bi-star-fill"></i>
                            <i class="bi bi-star-fill"></i>
                         </div>
-
                         <p>
                            "Sizing guide was spot-on and the return process took less than five minutes when I needed to
                            exchange."
                         </p>
-
                         <div class="review-card__user">
                            <img src="https://i.pravatar.cc/100?img=44" alt="Priya Nair">
-
                            <div>
                               <h3>Priya Nair</h3>
                               <span>Verified buyer</span>
@@ -234,7 +382,6 @@
                         </div>
                      </div>
                   </div>
-
                   <!-- Card 4 -->
                   <div class="swiper-slide">
                      <div class="review-card card">
@@ -245,15 +392,12 @@
                            <i class="bi bi-star-fill"></i>
                            <i class="bi bi-star-fill"></i>
                         </div>
-
                         <p>
                            "Sizing guide was spot-on and the return process took less than five minutes when I needed to
                            exchange."
                         </p>
-
                         <div class="review-card__user">
                            <img src="https://i.pravatar.cc/100?img=32" alt="Liam Wilson">
-
                            <div>
                               <h3>Liam Wilson</h3>
                               <span>Verified buyer</span>
@@ -261,7 +405,6 @@
                         </div>
                      </div>
                   </div>
-
                   <!-- Card 5 -->
                   <div class="swiper-slide">
                      <div class="review-card card">
@@ -272,15 +415,12 @@
                            <i class="bi bi-star-fill"></i>
                            <i class="bi bi-star-fill"></i>
                         </div>
-
                         <p>
                            "Sizing guide was spot-on and the return process took less than five minutes when I needed to
                            exchange."
                         </p>
-
                         <div class="review-card__user">
                            <img src="https://i.pravatar.cc/100?img=25" alt="Sophiya Martinez">
-
                            <div>
                               <h3>Sophiya Martinez</h3>
                               <span>Verified buyer</span>
@@ -288,12 +428,9 @@
                         </div>
                      </div>
                   </div>
-
                </div>
             </div>
-
             <div class="testimonial-pagination"></div>
-
             <button class="testimonial-next" type="button" aria-label="Next review">
                <i class="bi bi-arrow-right"></i>
             </button>
@@ -303,62 +440,52 @@
          <!-- Features -->
          <div class="features">
             <div class="row g-4">
-
                <div class="col-sm-6 col-lg-3">
                   <div class="feature">
                      <div class="feature__icon">
                         <i class="bi bi-truck"></i>
                      </div>
-
                      <div>
                         <h3>Free shipping</h3>
                         <p>On orders over $120</p>
                      </div>
                   </div>
                </div>
-
                <div class="col-sm-6 col-lg-3">
                   <div class="feature">
                      <div class="feature__icon">
                         <i class="bi bi-arrow-clockwise"></i>
                      </div>
-
                      <div>
                         <h3>Free returns</h3>
                         <p>30-day return window</p>
                      </div>
                   </div>
                </div>
-
                <div class="col-sm-6 col-lg-3">
                   <div class="feature">
                      <div class="feature__icon">
                         <i class="bi bi-shield-check"></i>
                      </div>
-
                      <div>
                         <h3>Secure checkout</h3>
                         <p>256-bit SSL encrypted</p>
                      </div>
                   </div>
                </div>
-
                <div class="col-sm-6 col-lg-3">
                   <div class="feature">
                      <div class="feature__icon">
                         <i class="bi bi-headset"></i>
                      </div>
-
                      <div>
                         <h3>24/7 support</h3>
                         <p>Real humans, real fast</p>
                      </div>
                   </div>
                </div>
-
             </div>
          </div>
-
       </div>
    </section>
    <!-- Clients Carousel One End -->
