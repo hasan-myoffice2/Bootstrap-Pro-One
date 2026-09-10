@@ -12286,6 +12286,82 @@ textarea.form-control-lg {
   }
 }
 
+.newsletter-section {
+  padding: 5rem 0;
+  background: #fff;
+}
+.newsletter-section .newsletter {
+  padding: 32px 16px;
+  border-radius: 16px;
+  background: #e7efe9;
+}
+.newsletter-section .newsletter .newsletter__title h3, .newsletter-section .newsletter .newsletter__title .h3 {
+  margin-bottom: 16px;
+  color: var(--brandColor);
+  font-size: 12px;
+  font-weight: 500;
+  font-family: "Space Mono", monospace;
+  letter-spacing: 2px;
+  word-spacing: 4px;
+  text-transform: uppercase;
+}
+.newsletter-section .newsletter .newsletter__title h2, .newsletter-section .newsletter .newsletter__title .h2 {
+  margin-bottom: 16px;
+  color: var(--primaryColor);
+  font-size: 26px;
+  font-weight: 600;
+  font-family: "Fraunces", serif;
+}
+.newsletter-section .newsletter .newsletter__input-area input {
+  width: 100%;
+  padding: 12px 24px;
+  border: 2px solid transparent;
+  border-radius: 50px;
+  outline: none;
+  transition: 0.3s;
+}
+.newsletter-section .newsletter .newsletter__input-area input:focus {
+  border-color: var(--brandColor);
+}
+.newsletter-section .newsletter .newsletter__input-area button {
+  margin-top: 20px;
+  padding: 12px 24px;
+  border: 0;
+  border-radius: 50px;
+  background: var(--brandColor);
+  color: #fff;
+  font-weight: 600;
+  transition: 0.3s;
+}
+.newsletter-section .newsletter .newsletter__input-area button:hover {
+  background-color: #0B5ED7;
+}
+@media (min-width: 992px) {
+  .newsletter-section .newsletter {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 48px;
+  }
+  .newsletter-section .newsletter .newsletter__input-area {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+  }
+  .newsletter-section .newsletter .newsletter__input-area input {
+    width: auto;
+  }
+  .newsletter-section .newsletter .newsletter__input-area button {
+    margin-top: 0;
+  }
+}
+@media (min-width: 992px) {
+  .newsletter-section {
+    padding-right: 0;
+    padding-left: 0;
+  }
+}
+
 .footer-section {
   background-color: var(--footerBgColor);
   color: var(--footerText);
