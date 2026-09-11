@@ -12379,6 +12379,7 @@ textarea.form-control-lg {
   color: var(--primaryColor);
   font-size: clamp(28px, 3vw, 42px);
   font-weight: 500;
+  font-family: var(--frauncesFont);
   line-height: 1.15;
 }
 .product-section .product-section-header .btn-shop-all {
