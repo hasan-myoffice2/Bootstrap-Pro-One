@@ -24,6 +24,42 @@ const testimonialSwiper = new Swiper(".testimonialSwiper", {
 });
 
 
+// Best Sellert <Scripts />
+new Swiper(".bestSellerSwiper", {
+   loop: true,
+   spaceBetween: 24,
+   slidesPerView: 1,
+   autoplay: { delay: 3000, disableOnInteraction: false },
+   pagination: { el: ".bestSellerPagination", clickable: true },
+   navigation: { nextEl: ".bestSellerNext", prevEl: ".bestSellerPrev" },
+   breakpoints: {
+      576: { slidesPerView: 2 },
+      992: { slidesPerView: 3 },
+      1200: { slidesPerView: 4 }
+   }
+});
+
+var swiper = new Swiper(".productSwiper", {
+   slidesPerView: 1,
+   spaceBetween: 24,
+   loop: true,
+   autoplay: {
+      delay: 3000,
+      disableOnInteraction: false,
+   },
+   pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+   },
+   breakpoints: {
+      576: { slidesPerView: 2 },
+      768: { slidesPerView: 3 },
+      1200: { slidesPerView: 4 }
+   }
+});
+
+
+
 // Countdown target date
 const targetDate = new Date("2026-12-31T23:59:59").getTime();
 
