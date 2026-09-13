@@ -58,7 +58,7 @@ var swiper = new Swiper(".productSwiper", {
    }
 });
 
-
+// Category Script
 const categorySwiper = new Swiper(".sb-category-swiper", {
    loop: true,
    spaceBetween: 20,
@@ -92,8 +92,6 @@ const categorySwiper = new Swiper(".sb-category-swiper", {
       }
    }
 });
-
-
 
 // Countdown target date
 const targetDate = new Date("2026-12-31T23:59:59").getTime();
