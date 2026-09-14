@@ -1,0 +1,652 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Pro Num One</title>
+   <link rel="stylesheet" href="/src/css/main.css">
+   <!-- Swiper CDN LINK -->
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+   <!-- Bootstrap 5 CSS -->
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+   <!-- Bootstrap Icons -->
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+
+<body>
+
+   <!-- Navbar -->
+   <nav class="custom-navbar">
+      <div class="navbar-container d-flex align-items-center justify-content-between"> <!-- Mobile Menu Button -->
+         <button class="mobile-menu-btn"> <i class="bi bi-list"></i> </button> <!-- Logo -->
+         <a class="brand-name" href="/index.html"><img src="/image/BrandLogo.png" alt="Brand-logo"></a>
+         <!-- Desktop Menu -->
+         <ul class="main-menu list-unstyled align-items-center mb-0"> <!-- Home -->
+            <li> <a href="#" class="active"> Home <i class="bi bi-chevron-down chevron"></i> </a>
+               <ul class="custom-dropdown list-unstyled mb-0">
+                  <li> <a href="/Home/multipurpose.html" class="dropdown-item-custom"> Multipurpose Home </a> </li>
+                  <li> <a href="#" class="dropdown-item-custom"> Fashion Home </a> </li>
+                  <li> <a href="#" class="dropdown-item-custom"> Electronice Home </a> </li>
+               </ul>
+            </li> <!-- Shop -->
+            <li> <a href="#"> Shop <i class="bi bi-chevron-down chevron"></i> </a> <!-- Mega Menu -->
+               <div class="mega-menu">
+                  <div class="row g-4"> <!-- Column 1 -->
+                     <div class="col-3">
+                        <h2 class="mega-title"> SHOP LAYOUTS </h2>
+                        <ul class="mega-list">
+                           <li>Grid — left sidebar</li>
+                           <li>Grid — Right sidebar</li>
+                           <li>List View</li>
+                           <li>Product Details</li>
+                        </ul>
+                     </div> <!-- Column 2 -->
+                     <div class="col-3">
+                        <h2 class="mega-title"> SHOP TOOLS </h2>
+                        <ul class="mega-list">
+                           <li>Compare products</li>
+                           <li>Wishlist</li>
+                           <li>Shopping cart</li>
+                           <li>Checkout</li>
+                        </ul>
+                     </div> <!-- Column 3 -->
+                     <div class="col-3">
+                        <h2 class="mega-title"> CATEGORIES </h2>
+                        <ul class="mega-list">
+                           <li>Compare products</li>
+                           <li>Wishlist</li>
+                           <li>Shopping cart</li>
+                           <li>Checkout</li>
+                        </ul>
+                     </div> <!-- Image -->
+                     <div class="col-3"> <img src="/image/nav-img.jpg" alt="navImage" class="mega-image"> </div>
+                  </div>
+               </div>
+            </li> <!-- Pages -->
+            <li> <a href="#"> Pages <i class="bi bi-chevron-down chevron"></i> </a>
+               <ul class="custom-dropdown list-unstyled mb-0">
+                  <li> <a href="#" class="dropdown-item-custom"> About Us </a> </li>
+                  <li> <a href="#" class="dropdown-item-custom"> Contact Us </a> </li>
+                  <li> <a href="#" class="dropdown-item-custom"> FAQ </a> </li>
+                  <li> <a href="#" class="dropdown-item-custom"> 404 Error Page </a> </li>
+                  <li> <a href="#" class="dropdown-item-custom"> Checkout Flow </a> </li>
+               </ul>
+            </li> <!-- User -->
+            <li> <a href="#"> User <i class="bi bi-chevron-down chevron"></i> </a>
+               <ul class="custom-dropdown list-unstyled mb-0">
+                  <li> <a href="#" class="dropdown-item-custom"> Sign in </a> </li>
+                  <li> <a href="#" class="dropdown-item-custom"> Create Account </a> </li>
+                  <li> <a href="#" class="dropdown-item-custom"> Account Dashboard </a> </li>
+                  <li> <a href="#" class="dropdown-item-custom"> Order History </a> </li>
+                  <li> <a href="#" class="dropdown-item-custom"> Tracker order </a> </li>
+                  <li> <a href="#" class="dropdown-item-custom"> Wishlist </a> </li>
+               </ul>
+            </li> <!-- Blog -->
+            <li> <a href="#"> Blog <i class="bi bi-chevron-down chevron"></i> </a>
+               <ul class="custom-dropdown list-unstyled mb-0">
+                  <li> <a href="#" class="dropdown-item-custom"> Blog grid </a> </li>
+                  <li> <a href="#" class="dropdown-item-custom"> Blog list </a> </li>
+                  <li> <a href="#" class="dropdown-item-custom"> Blog details </a> </li>
+               </ul>
+            </li> <!-- Support -->
+            <li> <a href="#"> Support <i class="bi bi-chevron-down chevron"></i> </a>
+               <ul class="custom-dropdown list-unstyled mb-0">
+                  <li> <a href="#" class="dropdown-item-custom"> FAQ </a> </li>
+                  <li> <a href="#" class="dropdown-item-custom"> Contact us </a> </li>
+                  <li> <a href="#" class="dropdown-item-custom"> Track order </a> </li>
+               </ul>
+            </li> <!-- Legal -->
+            <li> <a href="#"> Legal <i class="bi bi-chevron-down chevron"></i> </a>
+               <ul class="custom-dropdown list-unstyled mb-0">
+                  <li> <a href="#" class="dropdown-item-custom"> Privacy policy </a> </li>
+                  <li> <a href="#" class="dropdown-item-custom"> Trams & conditions </a> </li>
+               </ul>
+            </li>
+         </ul> <!-- Navbar Actions -->
+         <div class="nav-actions"> <!-- Search -->
+            <div class="nav-action desktop-action"> <i class="bi bi-search"></i> </div> <!-- Wishlist -->
+            <div class="nav-action"> <i class="bi bi-heart"></i> <span class="badge-custom"> 3 </span> </div>
+            <!-- User -->
+            <div class="nav-action desktop-action"> <i class="bi bi-person"></i> </div> <!-- Cart -->
+            <div class="nav-action"> <i class="bi bi-bag"></i> <span class="badge-custom"> 2 </span> </div>
+         </div>
+      </div>
+   </nav>
+
+   <!-- Hero Section Start -->
+   <section class="hero-section">
+      <div class="container">
+         <div class="row">
+            <div class="col-md-6 align-content-center">
+               <span class="hero-subtitle text-uppercase">Autumn Edit — up to 30% off</span>
+               <h1 class="hero-title">Tailored for the season ahead.</h1>
+               <p class="description">Considered outerwear and knitwear in natural fibres — cut for movement, built for
+                  the years, not just the season.</p>
+               <div class="hero-btn d-flex align-items-center gap-3">
+                  <button class="btn-one border-0">Shop the edit <i class="bi bi-arrow-right px-1"></i></button>
+                  <button class="btn-two border-0">View lookbook</button>
+               </div>
+            </div>
+            <div class="col-md-6 d-flex justify-content-md-end position-relative">
+               <img class="heroImage" src="/image/hero-bg-3.jpg" alt="heroImage">
+               <div style="left: 100px; bottom: 30px; background-color: white;"
+                  class="d-flex align-items-center gap-2 position-absolute p-3 rounded-2 awardCard">
+                  <i class="bi bi-award text-success fs-4"></i>
+                  <div>
+                     <div class="fw-semibold" style="font-size: 14px;">
+                        From $58
+                     </div>
+                     <div class="text-secondary" style="font-size: 13px;">
+                        Wool blend coats
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </section>
+   <!-- Hero Section End -->
+
+   <!-- Shop Category Section Start -->
+   <section class="shop-category-section">
+      <div class="container">
+
+         <!-- Section Header -->
+         <div class="section-header text-center">
+            <span class="section-label">Collections</span>
+
+            <h2 class="section-title">
+               Shop by department
+            </h2>
+         </div>
+
+         <!-- Department Grid -->
+         <div class="row g-4">
+            <div class="col-12 col-md-4">
+               <a href="#" class="category-card">
+                  <div class="category-image" style="background-image: url('/image/categories1.png');">
+                  </div>
+                  <div class="category-overlay"></div>
+                  <div class="category-content">
+                     <div class="category-info">
+                        <h3>Women</h3>
+                        <span>212 items</span>
+                     </div>
+                  </div>
+               </a>
+            </div>
+
+            <div class="col-12 col-md-4">
+               <a href="#" class="category-card">
+                  <div class="category-image" style="background-image: url('/image/man.jpg');">
+                  </div>
+                  <div class="category-overlay"></div>
+                  <div class="category-content">
+                     <div class="category-info">
+                        <h3>Men</h3>
+                        <span>178 items</span>
+                     </div>
+                  </div>
+               </a>
+            </div>
+
+            <div class="col-12 col-md-4">
+               <a href="#" class="category-card">
+                  <div class="category-image" style="background-image: url('/image/kids.jpg');">
+                  </div>
+                  <div class="category-overlay"></div>
+                  <div class="category-content">
+                     <div class="category-info">
+                        <h3>Kids</h3>
+                        <span>64 items</span>
+                     </div>
+                  </div>
+               </a>
+            </div>
+         </div>
+      </div>
+   </section>
+   <!-- Shop Category Section End -->
+
+   <!-- Shop Seller Section Start -->
+   <section class="trending-section">
+      <div class="container"> <!-- Section Header -->
+         <div class="section-header d-flex align-items-end justify-content-between">
+            <div>
+               <div class="section-label d-flex align-items-center gap-2"> <span class="label-line"></span> <span>RIGHT
+                     NOW</span> </div>
+               <h2 class="section-title mb-0"> Trending pieces </h2>
+            </div> <a href="#" class="shop-all-btn d-none d-sm-block"> Shop all </a>
+         </div> <!-- Product Grid -->
+         <div class="row g-4"> <!-- Product 01 -->
+            <div class="col-12 col-sm-6 col-lg-3">
+               <div class="product-card"> <!-- Image -->
+                  <div class="product-image"> <img
+                        src="https://images.unsplash.com/photo-1548883354-7622d03aca27?auto=format&fit=crop&w=700&q=80"
+                        alt="Wool Blend Overcoat" class="img-fluid"> <!-- Discount Badge --> <span
+                        class="product-badge discount-badge"> -25% </span> <!-- Right Icons -->
+                     <div class="product-actions"> <button type="button"> <i class="bi bi-heart"></i> </button> <button
+                           type="button"> <i class="bi bi-eye"></i> </button> <button type="button"> <i
+                              class="bi bi-arrow-left-right"></i> </button> </div> <!-- Add To Cart -->
+                     <div class="add-cart"> <button type="button"> Add to cart </button> </div>
+                  </div> <!-- Product Info -->
+                  <div class="product-info">
+                     <p class="product-category"> Women / Outerwear </p>
+                     <h3> Wool Blend Overcoat </h3> <!-- Colors -->
+                     <div class="product-colors"> <span class="color color-dark"></span> <span
+                           class="color color-red"></span> <span class="color color-beige"></span> </div> <!-- Price -->
+                     <div class="product-price"> <span>$149.00</span> <del>$199.00</del> </div>
+                  </div>
+               </div>
+            </div> <!-- Product 02 -->
+            <div class="col-12 col-sm-6 col-lg-3">
+               <div class="product-card">
+                  <div class="product-image"> <img
+                        src="https://images.unsplash.com/photo-1551488831-00ddcb6c6bd3?auto=format&fit=crop&w=700&q=80"
+                        alt="Merino Crewneck" class="img-fluid"> <!-- New Badge --> <span
+                        class="product-badge new-badge"> NEW </span> <!-- Icons -->
+                     <div class="product-actions"> <button type="button"> <i class="bi bi-heart"></i> </button> <button
+                           type="button"> <i class="bi bi-eye"></i> </button> <button type="button"> <i
+                              class="bi bi-arrow-left-right"></i> </button> </div> <!-- Add To Cart -->
+                     <div class="add-cart"> <button type="button"> Add to cart </button> </div>
+                  </div>
+                  <div class="product-info">
+                     <p class="product-category"> Men / Knitwear </p>
+                     <h3> Merino Crewneck </h3> <!-- Colors -->
+                     <div class="product-colors"> <span class="color color-dark"></span> <span
+                           class="color color-red"></span> <span class="color color-beige"></span> </div> <!-- Price -->
+                     <div class="product-price"> <span>$88.00</span> </div>
+                  </div>
+               </div>
+            </div> <!-- Product 03 -->
+            <div class="col-12 col-sm-6 col-lg-3">
+               <div class="product-card">
+                  <div class="product-image"> <img
+                        src="https://images.unsplash.com/photo-1529139574466-a303027c1d8b?auto=format&fit=crop&w=700&q=80"
+                        alt="Bias-Cut Midi Dress" class="img-fluid"> <!-- Icons -->
+                     <div class="product-actions"> <button type="button"> <i class="bi bi-heart"></i> </button> <button
+                           type="button"> <i class="bi bi-eye"></i> </button> <button type="button"> <i
+                              class="bi bi-arrow-left-right"></i> </button> </div> <!-- Add To Cart -->
+                     <div class="add-cart"> <button type="button"> Add to cart </button> </div>
+                  </div>
+                  <div class="product-info">
+                     <p class="product-category"> Women / Dresses </p>
+                     <h3> Bias-Cut Midi Dress </h3> <!-- Colors -->
+                     <div class="product-colors"> <span class="color color-dark"></span> <span
+                           class="color color-red"></span> </div> <!-- Price -->
+                     <div class="product-price"> <span>$112.00</span> </div>
+                  </div>
+               </div>
+            </div> <!-- Product 04 -->
+            <div class="col-12 col-sm-6 col-lg-3">
+               <div class="product-card">
+                  <div class="product-image"> <img
+                        src="https://images.unsplash.com/photo-1551028719-00167b16eac5?auto=format&fit=crop&w=700&q=80"
+                        alt="Puffer Jacket Junior" class="img-fluid"> <!-- Hot Badge --> <span
+                        class="product-badge hot-badge"> HOT </span> <!-- Icons -->
+                     <div class="product-actions"> <button type="button"> <i class="bi bi-heart"></i> </button> <button
+                           type="button"> <i class="bi bi-eye"></i> </button> <button type="button"> <i
+                              class="bi bi-arrow-left-right"></i> </button> </div> <!-- Add To Cart -->
+                     <div class="add-cart"> <button type="button"> Add to cart </button> </div>
+                  </div>
+                  <div class="product-info">
+                     <p class="product-category"> Kids / Outerwear </p>
+                     <h3> Puffer Jacket, Junior </h3> <!-- Colors -->
+                     <div class="product-colors"> <span class="color color-dark"></span> <span
+                           class="color color-red"></span> </div> <!-- Price -->
+                     <div class="product-price"> <span>$54.00</span> </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </section> <!-- Shop Seller Section End -->
+
+   <!-- CTA Section Start -->
+   <section class="cta-section container my-5 my-lg-5 py-5">
+      <div class="cta-bg"></div>
+      <div class="cta-overlay"></div>
+      <div class="cta-content text-center text-white mx-auto px-3">
+         <div class="cta-subtitle d-flex align-items-center justify-content-center gap-3 mb-3">
+            <span></span>
+            <small>Seasonal Sale</small>
+         </div>
+         <h2 class="cta-title mb-3">
+            Up to 40% off outerwear
+         </h2>
+         <p class="cta-text mb-4">
+            Ends Sunday midnight &mdash; while stocks last
+         </p>
+         <a href="#shop" class="btn cta-btn">
+            Shop the sale
+         </a>
+      </div>
+   </section>
+   <!-- CTA Section End -->
+
+   <!-- Studio Section Start -->
+   <section class="studio-section px-3 px-sm-4 px-lg-5">
+      <div class="container text-center">
+
+         <!-- Sub-heading -->
+         <div class="d-flex align-items-center justify-content-center gap-2 mb-3">
+            <span class="studio-line"></span>
+
+            <span class="studio-subtitle font-MonoSpace text-brandColor fw-medium text-uppercase">
+               @NOVENA.STUDIO
+            </span>
+         </div>
+
+         <!-- Main Title -->
+         <h2 class="studio-title font-Fraunces fw-semibold mb-5">
+            Tag us in your everyday
+         </h2>
+
+         <!-- Image Grid -->
+         <div class="row g-3 g-sm-4">
+
+            <!-- Image Card 1 -->
+            <div class="col-6 col-sm-4 col-lg-2">
+               <div class="studio-image">
+                  <img src="/image/instagram-1.jpg" alt="Clothing rack" class="w-100 h-100 object-fit-cover">
+               </div>
+            </div>
+
+            <!-- Image Card 2 -->
+            <div class="col-6 col-sm-4 col-lg-2">
+               <div class="studio-image">
+                  <img src="/image/instagram-2.jpg" alt="Portrait" class="w-100 h-100 object-fit-cover">
+               </div>
+            </div>
+
+            <!-- Image Card 3 -->
+            <div class="col-6 col-sm-4 col-lg-2">
+               <div class="studio-image">
+                  <img src="/image/instagram-3.jpg" alt="Yellow outfit" class="w-100 h-100 object-fit-cover">
+               </div>
+            </div>
+
+            <!-- Image Card 4 -->
+            <div class="col-6 col-sm-4 col-lg-2">
+               <div class="studio-image">
+                  <img src="/image/instagram-4.jpg" alt="Striped pants" class="w-100 h-100 object-fit-cover">
+               </div>
+            </div>
+
+            <!-- Image Card 5 -->
+            <div class="col-6 col-sm-4 col-lg-2">
+               <div class="studio-image">
+                  <img src="/image/instagram-5.jpg" alt="Graphic t-shirt" class="w-100 h-100 object-fit-cover">
+               </div>
+            </div>
+
+            <!-- Image Card 6 -->
+            <div class="col-6 col-sm-4 col-lg-2">
+               <div class="studio-image">
+                  <img src="/image/instagram-6.jpg" alt="Pink coat" class="w-100 h-100 object-fit-cover">
+               </div>
+            </div>
+
+         </div>
+      </div>
+   </section>
+   <!-- Studio Section End -->
+
+   <!-- Clients Section Start -->
+   <section class="clients-section">
+      <div class="container px-4 px-lg-3 font-Fraunces">
+
+         <!-- Section Heading -->
+         <div class="clients-heading text-center mb-5">
+            <div class="d-flex align-items-center justify-content-center gap-2 mb-3">
+               <span class="section-line"></span>
+
+               <span class="font-MonoSpace text-brandColor reviews-text">
+                  Reviews
+               </span>
+            </div>
+
+            <h2 class="font-Fraunces fw-bold mb-0 clients-title">
+               What customers say
+            </h2>
+         </div>
+
+         <!-- Testimonials Grid -->
+         <div class="row g-4">
+
+            <!-- Card 1 -->
+            <div class="col-12 col-md-6 col-lg-4">
+               <div class="review-card h-100">
+
+                  <!-- Stars -->
+                  <div class="review-stars mb-3">
+                     <i class="bi bi-star-fill"></i>
+                     <i class="bi bi-star-fill"></i>
+                     <i class="bi bi-star-fill"></i>
+                     <i class="bi bi-star-fill"></i>
+                     <i class="bi bi-star-fill"></i>
+                  </div>
+
+                  <!-- Review -->
+                  <p class="review-content mb-4">
+                     "Sizing guide was spot-on and the return process took less than five minutes when I needed to
+                     exchange."
+                  </p>
+
+                  <!-- User -->
+                  <div class="d-flex align-items-center gap-3">
+                     <img src="https://i.pravatar.cc/100?img=47" alt="Maria Chen" class="review-avatar">
+
+                     <div>
+                        <h3 class="review-name mb-0">
+                           Maria Chen
+                        </h3>
+
+                        <p class="review-role mb-0">
+                           Verified buyer
+                        </p>
+                     </div>
+                  </div>
+
+               </div>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="col-12 col-md-6 col-lg-4">
+               <div class="review-card h-100">
+
+                  <!-- Stars -->
+                  <div class="review-stars mb-3">
+                     <i class="bi bi-star-fill"></i>
+                     <i class="bi bi-star-fill"></i>
+                     <i class="bi bi-star-fill"></i>
+                     <i class="bi bi-star-fill"></i>
+                     <i class="bi bi-star-fill"></i>
+                  </div>
+
+                  <!-- Review -->
+                  <p class="review-content mb-4">
+                     "Sizing guide was spot-on and the return process took less than five minutes when I needed to
+                     exchange."
+                  </p>
+
+                  <!-- User -->
+                  <div class="d-flex align-items-center gap-3">
+                     <img src="https://i.pravatar.cc/100?img=12" alt="Daniel Osei" class="review-avatar">
+
+                     <div>
+                        <h3 class="review-name mb-0">
+                           Daniel Osei
+                        </h3>
+
+                        <p class="review-role mb-0">
+                           Verified buyer
+                        </p>
+                     </div>
+                  </div>
+
+               </div>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="col-12 col-md-6 col-lg-4">
+               <div class="review-card h-100">
+
+                  <!-- Stars -->
+                  <div class="review-stars mb-3">
+                     <i class="bi bi-star-fill"></i>
+                     <i class="bi bi-star-fill"></i>
+                     <i class="bi bi-star-fill"></i>
+                     <i class="bi bi-star-fill"></i>
+                     <i class="bi bi-star-fill"></i>
+                  </div>
+
+                  <!-- Review -->
+                  <p class="review-content mb-4">
+                     "Sizing guide was spot-on and the return process took less than five minutes when I needed to
+                     exchange."
+                  </p>
+
+                  <!-- User -->
+                  <div class="d-flex align-items-center gap-3">
+                     <img src="https://i.pravatar.cc/100?img=44" alt="Priya Nair" class="review-avatar">
+
+                     <div>
+                        <h3 class="review-name mb-0">
+                           Priya Nair
+                        </h3>
+
+                        <p class="review-role mb-0">
+                           Verified buyer
+                        </p>
+                     </div>
+                  </div>
+
+               </div>
+            </div>
+
+         </div>
+      </div>
+   </section>
+   <!-- Clients Section End -->
+
+   <!-- NewsLetter Section Start-->
+   <section class="newsletter-section">
+      <div class="container">
+         <div class="newsletter">
+            <div class="newsletter__title">
+               <h3>Join the list</h3>
+               <h2>15% off your first order</h2>
+            </div>
+            <div class="newsletter__input-area">
+               <input type="text" placeholder="plancode@example.com">
+               <button type="button">Subscribe</button>
+            </div>
+         </div>
+      </div>
+   </section>
+   <!-- NewsLetter Section End-->
+
+   <!-- Footer Section Start -->
+   <footer class="footer-section py-5 px-3 px-lg-0">
+      <div class="container">
+         <div class="row g-5">
+            <!-- Footer About -->
+            <div class="col-lg-4 col-md-6">
+               <img src="/image/logo-white.png" alt="Footer Logo">
+               <p class="footer-description mt-4 mb-4">
+                  Considered essentials for everyday living —
+                  designed with restraint, made to last, priced
+                  fairly. Shipping worldwide from our studio.
+               </p>
+               <ul class="footer-social d-flex align-items-center gap-3 list-unstyled mb-0">
+                  <li>
+                     <a href="#"><i class="bi bi-instagram"></i></a>
+                  </li>
+                  <li>
+                     <a href="#"><i class="bi bi-facebook"></i></a>
+                  </li>
+                  <li>
+                     <a href="#"><i class="bi bi-pinterest"></i></a>
+                  </li>
+                  <li>
+                     <a href="#"><i class="bi bi-twitter-x"></i></a>
+                  </li>
+               </ul>
+            </div>
+
+            <!-- Shop -->
+            <div class="col-lg col-md-6">
+               <h3 class="footer-title">SHOP</h3>
+
+               <ul class="footer-links list-unstyled">
+                  <li><a href="#">New arrivals</a></li>
+                  <li><a href="#">Best sellers</a></li>
+                  <li><a href="#">Sale</a></li>
+                  <li><a href="#">Compare</a></li>
+                  <li><a href="#">Wishlist</a></li>
+               </ul>
+            </div>
+
+            <!-- Account -->
+            <div class="col-lg col-md-6">
+               <h3 class="footer-title">ACCOUNT</h3>
+
+               <ul class="footer-links list-unstyled">
+                  <li><a href="#">Sign in</a></li>
+                  <li><a href="#">Create account</a></li>
+                  <li><a href="#">Track order</a></li>
+                  <li><a href="#">Dashboard</a></li>
+               </ul>
+            </div>
+
+            <!-- Company -->
+            <div class="col-lg col-md-6">
+               <h3 class="footer-title">COMPANY</h3>
+
+               <ul class="footer-links list-unstyled">
+                  <li><a href="#">About us</a></li>
+                  <li><a href="#">Journal</a></li>
+                  <li><a href="#">Contact</a></li>
+                  <li><a href="#">FAQ</a></li>
+               </ul>
+            </div>
+
+            <!-- Legal -->
+            <div class="col-lg col-md-6">
+               <h3 class="footer-title">LEGAL</h3>
+               <ul class="footer-links list-unstyled">
+                  <li><a href="#">Privacy policy</a></li>
+                  <li><a href="#">Terms & conditions</a></li>
+                  <li><a href="#">Contact</a></li>
+                  <li><a href="#">Shipping & returns</a></li>
+               </ul>
+            </div>
+         </div>
+
+         <!-- Footer Bottom -->
+         <div
+            class="footer-bottom mt-5 pt-4 d-flex flex-column flex-lg-row align-items-center justify-content-between gap-3">
+            <p class="mb-0">
+               © 2026 Plan Code Deploy. All rights reserved.
+            </p>
+            <div class="payment-icons d-flex align-items-center gap-3">
+               <i class="bi bi-credit-card-2-front-fill"></i>
+               <i class="bi bi-paypal"></i>
+               <i class="bi bi-apple"></i>
+               <i class="bi bi-google"></i>
+            </div>
+         </div>
+      </div>
+   </footer>
+   <!-- Footer Section End -->
+
+   <!-- Bootstrap JS -->
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"> </script>
+   <!-- SwiperJS cdn link -->
+   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+   <script src="/script.js"></script>
+</body>
+
+</html>
