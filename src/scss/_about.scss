@@ -1,0 +1,70 @@
+.pageHeader {
+   background-color: var(--bgOne);
+   font-family: var(--interFont);
+}
+
+.newsletter-section {
+   background-color: var(--bgTwo);
+}
+
+.about-story-img {
+   height: 420px;
+   object-fit: cover;
+   transition: transform 0.7s ease;
+}
+
+.about-story-img:hover {
+   transform: scale(1.05);
+}
+
+.about-line {
+   width: 24px;
+   height: 1px;
+   display: inline-block;
+   font-family: var(--monospace);
+   background-color: var(--brandColor);
+}
+
+.about-label {
+   font-size: 11px;
+   letter-spacing: 0.2em;
+}
+
+.about-title {
+   font-size: var(--primaryFS);
+   font-family: var(--frauncesFont);
+}
+
+.about-description {
+   font-size: var(--hoverHeaderFS);
+   color: var(--secondaryColor);
+   font-family: var(--interFont);
+   line-height: 1.8;
+}
+
+.stats-number {
+   font-size: 36px;
+   font-family: var(--frauncesFont);
+   color: var(--primaryColor);
+   line-height: 1;
+}
+
+@media (max-width: 991.98px) {
+   .about-story-img {
+      height: 460px;
+   }
+}
+
+@media (max-width: 575.98px) {
+   .about-story-img {
+      height: 360px;
+   }
+
+   .about-title {
+      font-size: 32px;
+   }
+
+   .stats-number {
+      font-size: 28px;
+   }
+}
