@@ -13621,7 +13621,7 @@ textarea.form-control-lg {
 .cta-section .cta-bg {
   position: absolute;
   inset: 0;
-  background: url("/./image/shop-bg-img.jpg") center/cover no-repeat;
+  background: url("/image/shop-bg-img.jpg") center/cover no-repeat;
 }
 .cta-section .cta-overlay {
   position: absolute;
