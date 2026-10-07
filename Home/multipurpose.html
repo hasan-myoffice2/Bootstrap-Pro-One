@@ -1,0 +1,976 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Pro Num One</title>
+   <link rel="stylesheet" href="../src/css/main.css">
+   <!-- Swiper CDN LINK -->
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+   <!-- Bootstrap 5 CSS -->
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+   <!-- Bootstrap Icons -->
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+
+<body>
+
+   <!-- Navbar -->
+   <nav class="custom-navbar">
+      <div class="navbar-container d-flex align-items-center justify-content-between"> <!-- Mobile Menu Button -->
+         <button class="mobile-menu-btn"> <i class="bi bi-list"></i> </button> <!-- Logo -->
+         <div class="brand-name"> <img src="../image/BrandLogo.png" alt="Brand-logo"> </div> <!-- Desktop Menu -->
+         <ul class="main-menu list-unstyled align-items-center mb-0"> <!-- Home -->
+            <li> <a href="#" class="active"> Home <i class="bi bi-chevron-down chevron"></i> </a>
+               <ul class="custom-dropdown list-unstyled mb-0">
+                  <li> <a href="/Home/multipurpose.html" class="dropdown-item-custom"> Multipurpose Home </a> </li>
+                  <li> <a href="../Home/fashion.html" class="dropdown-item-custom"> Fashion Home </a> </li>
+                  <li> <a href="#" class="dropdown-item-custom"> Electronice Home </a> </li>
+               </ul>
+            </li> <!-- Shop -->
+            <li> <a href="#"> Shop <i class="bi bi-chevron-down chevron"></i> </a> <!-- Mega Menu -->
+               <div class="mega-menu">
+                  <div class="row g-4"> <!-- Column 1 -->
+                     <div class="col-3">
+                        <h2 class="mega-title"> SHOP LAYOUTS </h2>
+                        <ul class="mega-list">
+                           <li>Grid — left sidebar</li>
+                           <li>Grid — Right sidebar</li>
+                           <li>List View</li>
+                           <li>Product Details</li>
+                        </ul>
+                     </div> <!-- Column 2 -->
+                     <div class="col-3">
+                        <h2 class="mega-title"> SHOP TOOLS </h2>
+                        <ul class="mega-list">
+                           <li>Compare products</li>
+                           <li>Wishlist</li>
+                           <li>Shopping cart</li>
+                           <li>Checkout</li>
+                        </ul>
+                     </div> <!-- Column 3 -->
+                     <div class="col-3">
+                        <h2 class="mega-title"> CATEGORIES </h2>
+                        <ul class="mega-list">
+                           <li>Compare products</li>
+                           <li>Wishlist</li>
+                           <li>Shopping cart</li>
+                           <li>Checkout</li>
+                        </ul>
+                     </div> <!-- Image -->
+                     <div class="col-3"> <img src="../image/nav-img.jpg" alt="navImage" class="mega-image"> </div>
+                  </div>
+               </div>
+            </li> <!-- Pages -->
+            <li> <a href="#"> Pages <i class="bi bi-chevron-down chevron"></i> </a>
+               <ul class="custom-dropdown list-unstyled mb-0">
+                  <li> <a href="#" class="dropdown-item-custom"> About Us </a> </li>
+                  <li> <a href="#" class="dropdown-item-custom"> Contact Us </a> </li>
+                  <li> <a href="#" class="dropdown-item-custom"> FAQ </a> </li>
+                  <li> <a href="#" class="dropdown-item-custom"> 404 Error Page </a> </li>
+                  <li> <a href="#" class="dropdown-item-custom"> Checkout Flow </a> </li>
+               </ul>
+            </li> <!-- User -->
+            <li> <a href="#"> User <i class="bi bi-chevron-down chevron"></i> </a>
+               <ul class="custom-dropdown list-unstyled mb-0">
+                  <li> <a href="#" class="dropdown-item-custom"> Sign in </a> </li>
+                  <li> <a href="#" class="dropdown-item-custom"> Create Account </a> </li>
+                  <li> <a href="#" class="dropdown-item-custom"> Account Dashboard </a> </li>
+                  <li> <a href="#" class="dropdown-item-custom"> Order History </a> </li>
+                  <li> <a href="#" class="dropdown-item-custom"> Tracker order </a> </li>
+                  <li> <a href="#" class="dropdown-item-custom"> Wishlist </a> </li>
+               </ul>
+            </li> <!-- Blog -->
+            <li> <a href="#"> Blog <i class="bi bi-chevron-down chevron"></i> </a>
+               <ul class="custom-dropdown list-unstyled mb-0">
+                  <li> <a href="#" class="dropdown-item-custom"> Blog grid </a> </li>
+                  <li> <a href="#" class="dropdown-item-custom"> Blog list </a> </li>
+                  <li> <a href="#" class="dropdown-item-custom"> Blog details </a> </li>
+               </ul>
+            </li> <!-- Support -->
+            <li> <a href="#"> Support <i class="bi bi-chevron-down chevron"></i> </a>
+               <ul class="custom-dropdown list-unstyled mb-0">
+                  <li> <a href="#" class="dropdown-item-custom"> FAQ </a> </li>
+                  <li> <a href="#" class="dropdown-item-custom"> Contact us </a> </li>
+                  <li> <a href="#" class="dropdown-item-custom"> Track order </a> </li>
+               </ul>
+            </li> <!-- Legal -->
+            <li> <a href="#"> Legal <i class="bi bi-chevron-down chevron"></i> </a>
+               <ul class="custom-dropdown list-unstyled mb-0">
+                  <li> <a href="#" class="dropdown-item-custom"> Privacy policy </a> </li>
+                  <li> <a href="#" class="dropdown-item-custom"> Trams & conditions </a> </li>
+               </ul>
+            </li>
+         </ul> <!-- Navbar Actions -->
+         <div class="nav-actions"> <!-- Search -->
+            <div class="nav-action desktop-action"> <i class="bi bi-search"></i> </div> <!-- Wishlist -->
+            <div class="nav-action"> <i class="bi bi-heart"></i> <span class="badge-custom"> 3 </span> </div>
+            <!-- User -->
+            <div class="nav-action desktop-action"> <i class="bi bi-person"></i> </div> <!-- Cart -->
+            <div class="nav-action"> <i class="bi bi-bag"></i> <span class="badge-custom"> 2 </span> </div>
+         </div>
+      </div>
+   </nav>
+
+   <!-- Hero Section Start -->
+   <section class="hero-section">
+      <div class="container">
+         <div class="row">
+            <div class="col-md-6 align-content-center">
+               <span class="hero-subtitle text-uppercase">Spring / Summer 2026</span>
+               <h1 class="hero-title">Everyday objects, made to outlast the trend cycle.</h1>
+               <p class="description">Novashop curates considered essentials across fashion, home and technology —
+                  fewer, better things, delivered worldwide in under 48 hours.</p>
+               <div class="hero-btn d-flex align-items-center gap-3">
+                  <button class="btn-one border-0">Shop the edit <i class="bi bi-arrow-right px-1"></i></button>
+                  <button class="btn-two border-0">Our story</button>
+               </div>
+            </div>
+            <div class="col-md-6 d-flex justify-content-md-end position-relative">
+               <img class="heroImage" src="../image/homeBg.png" alt="heroImage">
+               <div style="left: 100px; bottom: 30px; background-color: white;"
+                  class="d-flex align-items-center gap-2 position-absolute p-3 rounded-2 awardCard">
+                  <i class="bi bi-award text-success fs-4"></i>
+                  <div>
+                     <div class="fw-semibold" style="font-size: 14px;">
+                        Editor's pick
+                     </div>
+                     <div class="text-secondary" style="font-size: 13px;">
+                        The Weekend Tote
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </section>
+   <!-- Hero Section End -->
+
+   <!-- Category Section Start -->
+   <div class="container category-section px-4 px-lg-0">
+      <div class="container">
+         <!-- Top Header -->
+         <div class="d-lg-flex align-items-end justify-content-between mb-5">
+            <div>
+               <div class="d-flex align-items-center gap-2 mb-3">
+                  <span class="category-line"></span>
+                  <span class="category-label">BROWSE</span>
+               </div>
+               <h2 class="category-title mb-0">
+                  Shop by category
+               </h2>
+            </div>
+            <a href="#" class="category-btn mt-4 mt-lg-0">
+               View all categories
+            </a>
+         </div>
+         <!-- Category Slider -->
+         <div class="swiper sb-category-swiper">
+            <div class="swiper-wrapper">
+               <!-- Card 1 -->
+               <div class="swiper-slide">
+                  <div class="category-card">
+                     <img
+                        src="https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?q=80&w=800&auto=format&fit=crop"
+                        alt="Apparel">
+                     <div class="category-overlay"></div>
+                     <div class="category-content">
+                        <h3>Apparel</h3>
+                        <span>128 items</span>
+                     </div>
+                  </div>
+               </div>
+               <!-- Card 2 -->
+               <div class="swiper-slide">
+                  <div class="category-card">
+                     <img
+                        src="https://images.unsplash.com/photo-1549298916-b41d501d3772?q=80&w=800&auto=format&fit=crop"
+                        alt="Footwear">
+                     <div class="category-overlay"></div>
+                     <div class="category-content">
+                        <h3>Footwear</h3>
+                        <span>64 items</span>
+                     </div>
+                  </div>
+               </div>
+               <!-- Card 3 -->
+               <div class="swiper-slide">
+                  <div class="category-card">
+                     <img
+                        src="https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?q=80&w=800&auto=format&fit=crop"
+                        alt="Accessories">
+                     <div class="category-overlay"></div>
+                     <div class="category-content">
+                        <h3>Accessories</h3>
+                        <span>96 items</span>
+                     </div>
+                  </div>
+               </div>
+               <!-- Card 4 -->
+               <div class="swiper-slide">
+                  <div class="category-card">
+                     <img
+                        src="https://images.unsplash.com/photo-1586023492125-27b2c045efd7?q=80&w=800&auto=format&fit=crop"
+                        alt="Home & Living">
+                     <div class="category-overlay"></div>
+                     <div class="category-content">
+                        <h3>Home & Living</h3>
+                        <span>153 items</span>
+                     </div>
+                  </div>
+               </div>
+               <!-- Card 5 -->
+               <div class="swiper-slide">
+                  <div class="category-card">
+                     <img
+                        src="https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?q=80&w=800&auto=format&fit=crop"
+                        alt="Beauty">
+                     <div class="category-overlay"></div>
+                     <div class="category-content">
+                        <h3>Beauty</h3>
+                        <span>82 items</span>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <!-- Pagination -->
+            <div class="swiper-pagination category-pagination"></div>
+         </div>
+      </div>
+   </div>
+   <!-- Category Section End -->
+
+   <!-- Best Seller Section Start -->
+   <section class="product-section">
+      <div class="container">
+
+         <!-- Section Header -->
+         <div class="product-section-header d-flex justify-content-between align-items-end">
+            <div>
+               <span class="sub-title">— FAN FAVOURITES</span>
+               <h2 class="main-title">Best sellers this month</h2>
+            </div>
+
+            <a href="#" class="btn btn-outline-dark rounded-pill btn-shop-all">
+               Shop all
+            </a>
+         </div>
+
+         <!-- Product Swiper -->
+         <div class="swiper productSwiper">
+            <div class="swiper-wrapper">
+
+               <!-- Product 01 -->
+               <div class="swiper-slide">
+                  <div class="product-card">
+
+                     <div class="card-img-wrapper">
+                        <span class="badge-custom badge-new">NEW</span>
+
+                        <div class="quick-actions">
+                           <button type="button" class="action-btn" aria-label="Add to wishlist">
+                              <i class="bi bi-heart"></i>
+                           </button>
+
+                           <button type="button" class="action-btn" aria-label="Quick view">
+                              <i class="bi bi-eye"></i>
+                           </button>
+
+                           <button type="button" class="action-btn" aria-label="Compare">
+                              <i class="bi bi-arrow-left-right"></i>
+                           </button>
+                        </div>
+
+                        <img src="https://images.unsplash.com/photo-1598033129183-c4f50c736f10?w=500"
+                           alt="Relaxed Linen Shirt" class="img-fluid">
+
+                        <div class="cart-btn-wrapper">
+                           <button type="button" class="card-btn">Add to cart</button>
+                        </div>
+                     </div>
+
+                     <div class="card-body">
+                        <span class="category-text">APPAREL</span>
+
+                        <h5 class="product-title">Relaxed Linen Shirt</h5>
+
+                        <div class="rating-box">
+                           <span class="stars">★★★★☆</span>
+                           <span class="rating-count">(214)</span>
+                        </div>
+
+                        <div class="price-box">
+                           <span class="current-price">$78.00</span>
+                        </div>
+                     </div>
+
+                  </div>
+               </div>
+
+               <!-- Product 02 -->
+               <div class="swiper-slide">
+                  <div class="product-card">
+
+                     <div class="card-img-wrapper">
+                        <span class="badge-custom badge-sale">-20%</span>
+
+                        <div class="quick-actions">
+                           <button type="button" class="action-btn" aria-label="Add to wishlist">
+                              <i class="bi bi-heart"></i>
+                           </button>
+
+                           <button type="button" class="action-btn" aria-label="Quick view">
+                              <i class="bi bi-eye"></i>
+                           </button>
+
+                           <button type="button" class="action-btn" aria-label="Compare">
+                              <i class="bi bi-arrow-left-right"></i>
+                           </button>
+                        </div>
+
+                        <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=500"
+                           alt="Court Leather Sneaker" class="img-fluid">
+
+                        <div class="cart-btn-wrapper">
+                           <button type="button" class="card-btn">Add to cart</button>
+                        </div>
+                     </div>
+
+                     <div class="card-body">
+                        <span class="category-text">FOOTWEAR</span>
+
+                        <h5 class="product-title">Court Leather Sneaker</h5>
+
+                        <div class="rating-box">
+                           <span class="stars">★★★★☆</span>
+                           <span class="rating-count">(98)</span>
+                        </div>
+
+                        <div class="price-box">
+                           <span class="current-price">$96.00</span>
+                           <span class="old-price">$120.00</span>
+                        </div>
+                     </div>
+
+                  </div>
+               </div>
+
+               <!-- Product 03 -->
+               <div class="swiper-slide">
+                  <div class="product-card">
+
+                     <div class="card-img-wrapper">
+                        <span class="badge-custom badge-hot">HOT</span>
+
+                        <div class="quick-actions">
+                           <button type="button" class="action-btn" aria-label="Add to wishlist">
+                              <i class="bi bi-heart"></i>
+                           </button>
+
+                           <button type="button" class="action-btn" aria-label="Quick view">
+                              <i class="bi bi-eye"></i>
+                           </button>
+
+                           <button type="button" class="action-btn" aria-label="Compare">
+                              <i class="bi bi-arrow-left-right"></i>
+                           </button>
+                        </div>
+
+                        <img src="https://images.unsplash.com/photo-1584917865442-de89df76afd3?w=500"
+                           alt="Canvas Weekend Backpack" class="img-fluid">
+
+                        <div class="cart-btn-wrapper">
+                           <button type="button" class="card-btn">Add to cart</button>
+                        </div>
+                     </div>
+
+                     <div class="card-body">
+                        <span class="category-text">ACCESSORIES</span>
+
+                        <h5 class="product-title">Canvas Weekend Backpack</h5>
+
+                        <div class="rating-box">
+                           <span class="stars">★★★★★</span>
+                           <span class="rating-count">(311)</span>
+                        </div>
+
+                        <div class="price-box">
+                           <span class="current-price">$64.00</span>
+                        </div>
+                     </div>
+
+                  </div>
+               </div>
+
+               <!-- Product 04 -->
+               <div class="swiper-slide">
+                  <div class="product-card">
+
+                     <div class="card-img-wrapper">
+                        <div class="quick-actions">
+                           <button type="button" class="action-btn" aria-label="Add to wishlist">
+                              <i class="bi bi-heart"></i>
+                           </button>
+
+                           <button type="button" class="action-btn" aria-label="Quick view">
+                              <i class="bi bi-eye"></i>
+                           </button>
+
+                           <button type="button" class="action-btn" aria-label="Compare">
+                              <i class="bi bi-arrow-left-right"></i>
+                           </button>
+                        </div>
+
+                        <img src="https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?w=500"
+                           alt="Stoneware Mug" class="img-fluid">
+
+                        <div class="cart-btn-wrapper">
+                           <button type="button" class="card-btn">Add to cart</button>
+                        </div>
+                     </div>
+
+                     <div class="card-body">
+                        <span class="category-text">HOME &amp; LIVING</span>
+
+                        <h5 class="product-title">Stoneware Mug, Set of 4</h5>
+
+                        <div class="rating-box">
+                           <span class="stars">★★★★☆</span>
+                           <span class="rating-count">(57)</span>
+                        </div>
+
+                        <div class="price-box">
+                           <span class="current-price">$42.00</span>
+                        </div>
+                     </div>
+
+                  </div>
+               </div>
+
+               <!-- Product 05 -->
+               <div class="swiper-slide">
+                  <div class="product-card">
+
+                     <div class="card-img-wrapper">
+                        <div class="quick-actions">
+                           <button type="button" class="action-btn" aria-label="Add to wishlist">
+                              <i class="bi bi-heart"></i>
+                           </button>
+
+                           <button type="button" class="action-btn" aria-label="Quick view">
+                              <i class="bi bi-eye"></i>
+                           </button>
+
+                           <button type="button" class="action-btn" aria-label="Compare">
+                              <i class="bi bi-arrow-left-right"></i>
+                           </button>
+                        </div>
+
+                        <img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=500"
+                           alt="Minimalist Watch" class="img-fluid">
+
+                        <div class="cart-btn-wrapper">
+                           <button type="button" class="card-btn">Add to cart</button>
+                        </div>
+                     </div>
+
+                     <div class="card-body">
+                        <span class="category-text">ACCESSORIES</span>
+
+                        <h5 class="product-title">Minimalist Watch</h5>
+
+                        <div class="rating-box">
+                           <span class="stars">★★★★★</span>
+                           <span class="rating-count">(120)</span>
+                        </div>
+
+                        <div class="price-box">
+                           <span class="current-price">$110.00</span>
+                        </div>
+                     </div>
+
+                  </div>
+               </div>
+
+            </div>
+
+            <div class="swiper-pagination"></div>
+         </div>
+
+      </div>
+   </section>
+   <!-- Best Seller Section End -->
+
+   <!-- Coundown Section Start -->
+   <section class="d-flex align-items-center justify-content-center cowndown-section">
+      <!-- Main Container -->
+      <div class="container">
+         <div class="row g-4">
+
+            <!-- ================= LEFT SALE CARD ================= -->
+            <div class="col-lg-7">
+               <div class="sale-card position-relative overflow-hidden rounded-4 h-100">
+
+                  <!-- Background Image -->
+                  <img
+                     src="https://images.unsplash.com/photo-1596462502278-27bfdc403348?auto=format&fit=crop&w=1400&q=85"
+                     alt="Studio Sale" class="position-absolute top-0 start-0 w-100 h-100 object-fit-cover sale-image">
+
+                  <!-- Dark Gradient -->
+                  <div class="position-absolute top-0 start-0 w-100 h-100 sale-overlay"></div>
+
+                  <!-- Content -->
+                  <div class="position-relative z-1 d-flex flex-column justify-content-center h-100 px-4 py-5 px-sm-5">
+
+                     <!-- Small Heading -->
+                     <p class="mb-3 text-uppercase text-white sale-label">
+                        Limited Time
+                     </p>
+
+                     <!-- Title -->
+                     <h1 class="sale-title text-white mb-0">
+                        The Studio Sale — up to 40% off
+                     </h1>
+
+                     <!-- Countdown -->
+                     <div class="mt-4 row g-2 countdown-box">
+
+                        <!-- Days -->
+                        <div class="col-3">
+                           <div
+                              class="countdown-item bg-white rounded-3 d-flex flex-column align-items-center justify-content-center">
+                              <span id="days" class=" fw-semibold countdown-number text-peraSeondColor">
+                                 00
+                              </span>
+                              <span class="mt-2 text-uppercase fw-medium countdown-label text-hoverPeraColor">
+                                 Days
+                              </span>
+                           </div>
+                        </div>
+
+                        <!-- Hours -->
+                        <div class="col-3">
+                           <div
+                              class="countdown-item bg-white rounded-3 d-flex flex-column align-items-center justify-content-center">
+                              <span id="hours" class=" fw-semibold countdown-number text-peraSeondColor">
+                                 00
+                              </span>
+                              <span class="mt-2 text-uppercase fw-medium countdown-label text-hoverPeraColor">
+                                 Hrs
+                              </span>
+                           </div>
+                        </div>
+
+                        <!-- Minutes -->
+                        <div class="col-3">
+                           <div
+                              class="countdown-item bg-white rounded-3 d-flex flex-column align-items-center justify-content-center">
+                              <span id="minutes" class=" fw-semibold countdown-number text-peraSeondColor">
+                                 00
+                              </span>
+                              <span class="mt-2 text-uppercase fw-medium countdown-label text-hoverPeraColor">
+                                 Min
+                              </span>
+                           </div>
+                        </div>
+
+                        <!-- Seconds -->
+                        <div class="col-3">
+                           <div
+                              class="countdown-item bg-white rounded-3 d-flex flex-column align-items-center justify-content-center">
+                              <span id="seconds" class=" fw-semibold countdown-number text-peraSeondColor">
+                                 00
+                              </span>
+                              <span class="mt-2 text-uppercase fw-medium countdown-label text-hoverPeraColor">
+                                 Sec
+                              </span>
+                           </div>
+                        </div>
+
+                     </div>
+
+                     <!-- Button -->
+                     <div class="mt-4">
+                        <a href="#" class="btn sale-btn bg-white rounded-pill fw-semibold text-black">
+                           Shop the sale
+                        </a>
+                     </div>
+
+                  </div>
+               </div>
+            </div>
+
+            <!-- ================= RIGHT CARDS ================= -->
+            <div class="col-lg-5">
+
+               <div class="d-grid gap-4 h-100">
+
+                  <!-- Top Card -->
+                  <div class="promo-card position-relative overflow-hidden rounded-3">
+
+                     <img
+                        src="https://images.unsplash.com/photo-1543163521-1bf539c55dd2?auto=format&fit=crop&w=1000&q=85"
+                        alt="New Arrivals"
+                        class="position-absolute top-0 start-0 w-100 h-100 object-fit-cover sale-image">
+
+                     <!-- Overlay -->
+                     <div class="position-absolute top-0 start-0 w-100 h-100 promo-overlay"></div>
+
+                     <!-- Text -->
+                     <div class="position-absolute bottom-0 start-0 z-1 text-white p-4">
+                        <h2 class="mb-0 promo-title">
+                           New arrivals
+                        </h2>
+
+                        <a href="#" class="mt-2 d-inline-block text-white promo-link">
+                           Shop the latest drop →
+                        </a>
+                     </div>
+
+                  </div>
+
+                  <!-- Bottom Card -->
+                  <div class="promo-card position-relative overflow-hidden rounded-3">
+
+                     <img
+                        src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=1000&q=85"
+                        alt="Gift Guide"
+                        class="position-absolute top-0 start-0 w-100 h-100 object-fit-cover sale-image">
+
+                     <!-- Overlay -->
+                     <div class="position-absolute top-0 start-0 w-100 h-100 promo-overlay"></div>
+
+                     <!-- Text -->
+                     <div class="position-absolute bottom-0 start-0 z-1 text-white p-4">
+                        <h2 class="mb-0 promo-title">
+                           Gift guide
+                        </h2>
+
+                        <a href="#" class="mt-2 d-inline-block text-white promo-link">
+                           Curated bundles from $50 →
+                        </a>
+                     </div>
+
+                  </div>
+
+               </div>
+            </div>
+
+         </div>
+      </div>
+   </section>
+   <!-- Coundown Section End -->
+
+   <!-- Clients Carousel One Start -->
+   <section class="review-section">
+      <div class="container">
+         <!-- Section Heading -->
+         <div class="section-heading">
+            <div class="section-heading__label">
+               <span></span>
+               <small>Reviews</small>
+            </div>
+            <h2>Loved by 12,000+ customers</h2>
+         </div>
+         <!-- Swiper -->
+         <div class="review-slider">
+            <div class="swiper testimonialSwiper">
+               <div class="swiper-wrapper">
+                  <!-- Card 1 -->
+                  <div class="swiper-slide">
+                     <div class="review-card card">
+                        <div class="review-card__stars">
+                           <i class="bi bi-star-fill"></i>
+                           <i class="bi bi-star-fill"></i>
+                           <i class="bi bi-star-fill"></i>
+                           <i class="bi bi-star-fill"></i>
+                           <i class="bi bi-star-fill"></i>
+                        </div>
+                        <p>
+                           "Sizing guide was spot-on and the return process took less than five minutes when I needed to
+                           exchange."
+                        </p>
+                        <div class="review-card__user">
+                           <img src="https://i.pravatar.cc/100?img=47" alt="Maria Chen">
+                           <div>
+                              <h3>Maria Chen</h3>
+                              <span>Verified buyer</span>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+
+                  <!-- Card 2 -->
+                  <div class="swiper-slide">
+                     <div class="review-card card">
+                        <div class="review-card__stars">
+                           <i class="bi bi-star-fill"></i>
+                           <i class="bi bi-star-fill"></i>
+                           <i class="bi bi-star-fill"></i>
+                           <i class="bi bi-star-fill"></i>
+                           <i class="bi bi-star-fill"></i>
+                        </div>
+                        <p>
+                           "Sizing guide was spot-on and the return process took less than five minutes when I needed to
+                           exchange."
+                        </p>
+                        <div class="review-card__user">
+                           <img src="https://i.pravatar.cc/100?img=12" alt="Daniel Osei">
+                           <div>
+                              <h3>Daniel Osei</h3>
+                              <span>Verified buyer</span>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <!-- Card 3 -->
+                  <div class="swiper-slide">
+                     <div class="review-card card">
+                        <div class="review-card__stars">
+                           <i class="bi bi-star-fill"></i>
+                           <i class="bi bi-star-fill"></i>
+                           <i class="bi bi-star-fill"></i>
+                           <i class="bi bi-star-fill"></i>
+                           <i class="bi bi-star-fill"></i>
+                        </div>
+                        <p>
+                           "Sizing guide was spot-on and the return process took less than five minutes when I needed to
+                           exchange."
+                        </p>
+                        <div class="review-card__user">
+                           <img src="https://i.pravatar.cc/100?img=44" alt="Priya Nair">
+                           <div>
+                              <h3>Priya Nair</h3>
+                              <span>Verified buyer</span>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <!-- Card 4 -->
+                  <div class="swiper-slide">
+                     <div class="review-card card">
+                        <div class="review-card__stars">
+                           <i class="bi bi-star-fill"></i>
+                           <i class="bi bi-star-fill"></i>
+                           <i class="bi bi-star-fill"></i>
+                           <i class="bi bi-star-fill"></i>
+                           <i class="bi bi-star-fill"></i>
+                        </div>
+                        <p>
+                           "Sizing guide was spot-on and the return process took less than five minutes when I needed to
+                           exchange."
+                        </p>
+                        <div class="review-card__user">
+                           <img src="https://i.pravatar.cc/100?img=32" alt="Liam Wilson">
+                           <div>
+                              <h3>Liam Wilson</h3>
+                              <span>Verified buyer</span>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <!-- Card 5 -->
+                  <div class="swiper-slide">
+                     <div class="review-card card">
+                        <div class="review-card__stars">
+                           <i class="bi bi-star-fill"></i>
+                           <i class="bi bi-star-fill"></i>
+                           <i class="bi bi-star-fill"></i>
+                           <i class="bi bi-star-fill"></i>
+                           <i class="bi bi-star-fill"></i>
+                        </div>
+                        <p>
+                           "Sizing guide was spot-on and the return process took less than five minutes when I needed to
+                           exchange."
+                        </p>
+                        <div class="review-card__user">
+                           <img src="https://i.pravatar.cc/100?img=25" alt="Sophiya Martinez">
+                           <div>
+                              <h3>Sophiya Martinez</h3>
+                              <span>Verified buyer</span>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="testimonial-pagination"></div>
+            <button class="testimonial-next" type="button" aria-label="Next review">
+               <i class="bi bi-arrow-right"></i>
+            </button>
+
+         </div>
+
+         <!-- Features -->
+         <div class="features">
+            <div class="row g-4">
+               <div class="col-sm-6 col-lg-3">
+                  <div class="feature">
+                     <div class="feature__icon">
+                        <i class="bi bi-truck"></i>
+                     </div>
+                     <div>
+                        <h3>Free shipping</h3>
+                        <p>On orders over $120</p>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-sm-6 col-lg-3">
+                  <div class="feature">
+                     <div class="feature__icon">
+                        <i class="bi bi-arrow-clockwise"></i>
+                     </div>
+                     <div>
+                        <h3>Free returns</h3>
+                        <p>30-day return window</p>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-sm-6 col-lg-3">
+                  <div class="feature">
+                     <div class="feature__icon">
+                        <i class="bi bi-shield-check"></i>
+                     </div>
+                     <div>
+                        <h3>Secure checkout</h3>
+                        <p>256-bit SSL encrypted</p>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-sm-6 col-lg-3">
+                  <div class="feature">
+                     <div class="feature__icon">
+                        <i class="bi bi-headset"></i>
+                     </div>
+                     <div>
+                        <h3>24/7 support</h3>
+                        <p>Real humans, real fast</p>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </section>
+   <!-- Clients Carousel One End -->
+
+   <!-- NewsLetter Section Start-->
+   <section class="newsletter-section">
+      <div class="container">
+         <div class="newsletter">
+            <div class="newsletter__title">
+               <h3>Stay in the loop</h3>
+               <h2>Get 10% of your first order</h2>
+            </div>
+            <div class="newsletter__input-area">
+               <input type="text" placeholder="plancode@example.com">
+               <button type="button">Subscribe</button>
+            </div>
+         </div>
+      </div>
+   </section>
+   <!-- NewsLetter Section End-->
+
+   <!-- Footer Section Start -->
+   <footer class="footer-section py-5 px-3 px-lg-0">
+      <div class="container">
+         <div class="row g-5">
+            <!-- Footer About -->
+            <div class="col-lg-4 col-md-6">
+               <img src="./image/logo-white.png" alt="Footer Logo">
+               <p class="footer-description mt-4 mb-4">
+                  Considered essentials for everyday living —
+                  designed with restraint, made to last, priced
+                  fairly. Shipping worldwide from our studio.
+               </p>
+               <ul class="footer-social d-flex align-items-center gap-3 list-unstyled mb-0">
+                  <li>
+                     <a href="#"><i class="bi bi-instagram"></i></a>
+                  </li>
+                  <li>
+                     <a href="#"><i class="bi bi-facebook"></i></a>
+                  </li>
+                  <li>
+                     <a href="#"><i class="bi bi-pinterest"></i></a>
+                  </li>
+                  <li>
+                     <a href="#"><i class="bi bi-twitter-x"></i></a>
+                  </li>
+               </ul>
+            </div>
+
+            <!-- Shop -->
+            <div class="col-lg col-md-6">
+               <h3 class="footer-title">SHOP</h3>
+
+               <ul class="footer-links list-unstyled">
+                  <li><a href="#">New arrivals</a></li>
+                  <li><a href="#">Best sellers</a></li>
+                  <li><a href="#">Sale</a></li>
+                  <li><a href="#">Compare</a></li>
+                  <li><a href="#">Wishlist</a></li>
+               </ul>
+            </div>
+
+            <!-- Account -->
+            <div class="col-lg col-md-6">
+               <h3 class="footer-title">ACCOUNT</h3>
+
+               <ul class="footer-links list-unstyled">
+                  <li><a href="#">Sign in</a></li>
+                  <li><a href="#">Create account</a></li>
+                  <li><a href="#">Track order</a></li>
+                  <li><a href="#">Dashboard</a></li>
+               </ul>
+            </div>
+
+            <!-- Company -->
+            <div class="col-lg col-md-6">
+               <h3 class="footer-title">COMPANY</h3>
+
+               <ul class="footer-links list-unstyled">
+                  <li><a href="#">About us</a></li>
+                  <li><a href="#">Journal</a></li>
+                  <li><a href="#">Contact</a></li>
+                  <li><a href="#">FAQ</a></li>
+               </ul>
+            </div>
+
+            <!-- Legal -->
+            <div class="col-lg col-md-6">
+               <h3 class="footer-title">LEGAL</h3>
+               <ul class="footer-links list-unstyled">
+                  <li><a href="#">Privacy policy</a></li>
+                  <li><a href="#">Terms & conditions</a></li>
+                  <li><a href="#">Contact</a></li>
+                  <li><a href="#">Shipping & returns</a></li>
+               </ul>
+            </div>
+         </div>
+
+         <!-- Footer Bottom -->
+         <div
+            class="footer-bottom mt-5 pt-4 d-flex flex-column flex-lg-row align-items-center justify-content-between gap-3">
+            <p class="mb-0">
+               © 2026 Plan Code Deploy. All rights reserved.
+            </p>
+            <div class="payment-icons d-flex align-items-center gap-3">
+               <i class="bi bi-credit-card-2-front-fill"></i>
+               <i class="bi bi-paypal"></i>
+               <i class="bi bi-apple"></i>
+               <i class="bi bi-google"></i>
+            </div>
+         </div>
+      </div>
+   </footer>
+   <!-- Footer Section End -->
+
+   <!-- Bootstrap JS -->
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"> </script>
+   <!-- SwiperJS cdn link -->
+   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+   <script src="../script.js"></script>
+</body>
+
+</html>
