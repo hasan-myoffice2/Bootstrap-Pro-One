@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Pro Num One</title>
+   <link rel="stylesheet" href="../src/css/main.css">
+   <!-- Swiper CDN LINK -->
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+   <!-- Bootstrap 5 CSS -->
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+   <!-- Bootstrap Icons -->
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+
+<body>
+
+   <!-- Navbar -->
+   <nav class="custom-navbar">
+      <div class="navbar-container d-flex align-items-center justify-content-between"> <!-- Mobile Menu Button -->
+         <button class="mobile-menu-btn"> <i class="bi bi-list"></i> </button> <!-- Logo -->
+         <a class="brand-name" href="/index.html"><img src="../image/BrandLogo.png" alt="Brand-logo"></a>
+         <!-- Desktop Menu -->
+         <ul class="main-menu list-unstyled align-items-center mb-0"> <!-- Home -->
+            <li> <a href="#" class="active"> Home <i class="bi bi-chevron-down chevron"></i> </a>
+               <ul class="custom-dropdown list-unstyled mb-0">
+                  <li> <a href="../Home/multipurpose.html" class="dropdown-item-custom"> Multipurpose Home </a> </li>
+                  <li> <a href="#" class="dropdown-item-custom"> Fashion Home </a> </li>
+                  <li> <a href="#" class="dropdown-item-custom"> Electronice Home </a> </li>
+               </ul>
+            </li> <!-- Shop -->
+            <li> <a href="#"> Shop <i class="bi bi-chevron-down chevron"></i> </a> <!-- Mega Menu -->
+               <div class="mega-menu">
+                  <div class="row g-4"> <!-- Column 1 -->
+                     <div class="col-3">
+                        <h2 class="mega-title"> SHOP LAYOUTS </h2>
+                        <ul class="mega-list">
+                           <li>Grid — left sidebar</li>
+                           <li>Grid — Right sidebar</li>
+                           <li>List View</li>
+                           <li>Product Details</li>
+                        </ul>
+                     </div> <!-- Column 2 -->
+                     <div class="col-3">
+                        <h2 class="mega-title"> SHOP TOOLS </h2>
+                        <ul class="mega-list">
+                           <li>Compare products</li>
+                           <li>Wishlist</li>
+                           <li>Shopping cart</li>
+                           <li>Checkout</li>
+                        </ul>
+                     </div> <!-- Column 3 -->
+                     <div class="col-3">
+                        <h2 class="mega-title"> CATEGORIES </h2>
+                        <ul class="mega-list">
+                           <li>Compare products</li>
+                           <li>Wishlist</li>
+                           <li>Shopping cart</li>
+                           <li>Checkout</li>
+                        </ul>
+                     </div> <!-- Image -->
+                     <div class="col-3"> <img src="../image/nav-img.jpg" alt="navImage" class="mega-image"> </div>
+                  </div>
+               </div>
+            </li> <!-- Pages -->
+            <li> <a href="#"> Pages <i class="bi bi-chevron-down chevron"></i> </a>
+               <ul class="custom-dropdown list-unstyled mb-0">
+                  <li> <a href="#" class="dropdown-item-custom"> About Us </a> </li>
+                  <li> <a href="#" class="dropdown-item-custom"> Contact Us </a> </li>
+                  <li> <a href="#" class="dropdown-item-custom"> FAQ </a> </li>
+                  <li> <a href="#" class="dropdown-item-custom"> 404 Error Page </a> </li>
+                  <li> <a href="#" class="dropdown-item-custom"> Checkout Flow </a> </li>
+               </ul>
+            </li> <!-- User -->
+            <li> <a href="#"> User <i class="bi bi-chevron-down chevron"></i> </a>
+               <ul class="custom-dropdown list-unstyled mb-0">
+                  <li> <a href="#" class="dropdown-item-custom"> Sign in </a> </li>
+                  <li> <a href="#" class="dropdown-item-custom"> Create Account </a> </li>
+                  <li> <a href="#" class="dropdown-item-custom"> Account Dashboard </a> </li>
+                  <li> <a href="#" class="dropdown-item-custom"> Order History </a> </li>
+                  <li> <a href="#" class="dropdown-item-custom"> Tracker order </a> </li>
+                  <li> <a href="#" class="dropdown-item-custom"> Wishlist </a> </li>
+               </ul>
+            </li> <!-- Blog -->
+            <li> <a href="#"> Blog <i class="bi bi-chevron-down chevron"></i> </a>
+               <ul class="custom-dropdown list-unstyled mb-0">
+                  <li> <a href="#" class="dropdown-item-custom"> Blog grid </a> </li>
+                  <li> <a href="#" class="dropdown-item-custom"> Blog list </a> </li>
+                  <li> <a href="#" class="dropdown-item-custom"> Blog details </a> </li>
+               </ul>
+            </li> <!-- Support -->
+            <li> <a href="#"> Support <i class="bi bi-chevron-down chevron"></i> </a>
+               <ul class="custom-dropdown list-unstyled mb-0">
+                  <li> <a href="#" class="dropdown-item-custom"> FAQ </a> </li>
+                  <li> <a href="#" class="dropdown-item-custom"> Contact us </a> </li>
+                  <li> <a href="#" class="dropdown-item-custom"> Track order </a> </li>
+               </ul>
+            </li> <!-- Legal -->
+            <li> <a href="#"> Legal <i class="bi bi-chevron-down chevron"></i> </a>
+               <ul class="custom-dropdown list-unstyled mb-0">
+                  <li> <a href="#" class="dropdown-item-custom"> Privacy policy </a> </li>
+                  <li> <a href="#" class="dropdown-item-custom"> Trams & conditions </a> </li>
+               </ul>
+            </li>
+         </ul> <!-- Navbar Actions -->
+         <div class="nav-actions"> <!-- Search -->
+            <div class="nav-action desktop-action"> <i class="bi bi-search"></i> </div> <!-- Wishlist -->
+            <div class="nav-action"> <i class="bi bi-heart"></i> <span class="badge-custom"> 3 </span> </div>
+            <!-- User -->
+            <div class="nav-action desktop-action"> <i class="bi bi-person"></i> </div> <!-- Cart -->
+            <div class="nav-action"> <i class="bi bi-bag"></i> <span class="badge-custom"> 2 </span> </div>
+         </div>
+      </div>
+   </nav>
+
+   <!-- Page Header Section Start -->
+   <section class="pageHeader py-5">
+      <div class="container">
+         <ul class="list-unstyled d-flex align-items-center gap-2 mb-0">
+            <li>
+               <a href="../index.html" class="text-secondary text-decoration-none font-interFont">
+                  Home
+               </a>
+            </li>
+            <li>
+               <i class="bi bi-chevron-right text-secondary"></i>
+            </li>
+            <li>
+               <a href="#" class="text-secondary text-decoration-none font-interFont">
+                  Contact
+               </a>
+            </li>
+         </ul>
+         <h2 class="h2 text-dark fw-semibold mt-2 mb-2">
+            Get in touch
+         </h2>
+         <p class="text-secondary font-interFont mb-0">
+            We usually reply within one business day.
+         </p>
+      </div>
+   </section>
+   <!-- Page Header Section End -->
+
+   <!-- Principles Section Start -->
+   <section class="principles-section">
+      <div class="container">
+         <!-- Section Heading -->
+         <div class="principles-heading text-center">
+            <div class="principles-label d-flex align-items-center justify-content-center gap-2">
+               <span class="principles-line"></span>
+               <span class="font-MonoSpace">
+                  What we believe
+               </span>
+            </div>
+            <h2 class="font-Fraunces">
+               Our principles
+            </h2>
+         </div>
+
+         <!-- Principles Cards -->
+         <div class="row g-4">
+
+            <!-- Card 01 -->
+            <div class="col-12 col-md-3">
+               <div class="principle-card d-flex align-items-center">
+                  <!-- Icon -->
+                  <div class="principle-icon d-flex align-items-center justify-content-center flex-shrink-0">
+                     <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M24 7L15 20H19L12 30H20L16 39H32L28 30H36L29 20H33L24 7Z" stroke="#1F5A44"
+                           stroke-width="1.8" stroke-linejoin="round" />
+                        <path d="M24 29V42" stroke="#1F5A44" stroke-width="1.8" stroke-linecap="round" />
+                     </svg>
+                  </div>
+
+                  <!-- Content -->
+                  <div class="principle-content">
+                     <h3>Made to last</h3>
+                     <p>
+                        We design for repair, not replacement, and back everything with a two-year.
+                     </p>
+                  </div>
+
+               </div>
+            </div>
+
+            <!-- Card 02 -->
+            <div class="col-12 col-md-3">
+               <div class="principle-card d-flex align-items-center">
+                  <!-- Icon -->
+                  <div class="principle-icon d-flex align-items-center justify-content-center flex-shrink-0">
+                     <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <!-- Heads -->
+                        <circle cx="18" cy="17" r="6" stroke="#1F5A44" stroke-width="1.8" />
+                        <circle cx="31" cy="18" r="5" stroke="#1F5A44" stroke-width="1.8" />
+                        <!-- Bodies -->
+                        <path d="M8 35C8 29.4772 12.4772 25 18 25C23.5228 25 28 29.4772 28 35" stroke="#1F5A44"
+                           stroke-width="1.8" stroke-linecap="round" />
+                        <path d="M27 27C28.2 25.8 29.8 25 31.8 25C36.3 25 40 28.7 40 33.2V35" stroke="#1F5A44"
+                           stroke-width="1.8" stroke-linecap="round" />
+                     </svg>
+                  </div>
+
+                  <!-- Content -->
+                  <div class="principle-content">
+                     <h3>Fair partners</h3>
+                     <p>
+                        We work directly with independent workshops and pay above.
+                     </p>
+                  </div>
+               </div>
+            </div>
+
+            <!-- Card 03 -->
+            <div class="col-12 col-md-3">
+               <div class="principle-card d-flex align-items-center">
+
+                  <!-- Icon -->
+                  <div class="principle-icon d-flex align-items-center justify-content-center flex-shrink-0">
+                     <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+
+                        <path d="M10 15V11C10 9.89543 10.8954 9 12 9H27L39 21L22 38L10 26V15Z" stroke="#1F5A44"
+                           stroke-width="1.8" stroke-linejoin="round" />
+
+                        <circle cx="17" cy="16" r="2.5" stroke="#1F5A44" stroke-width="1.8" />
+                     </svg>
+                  </div>
+
+                  <!-- Content -->
+                  <div class="principle-content">
+                     <h3>Honest pricing</h3>
+
+                     <p>
+                        No fake countdowns, no inflated "was" prices. What you see is the real cost.
+                     </p>
+                  </div>
+
+               </div>
+            </div>
+            <!-- Card 04 -->
+            <div class="col-12 col-md-3">
+               <div class="principle-card d-flex align-items-center">
+
+                  <!-- Icon -->
+                  <div class="principle-icon d-flex align-items-center justify-content-center flex-shrink-0">
+                     <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+
+                        <path d="M10 15V11C10 9.89543 10.8954 9 12 9H27L39 21L22 38L10 26V15Z" stroke="#1F5A44"
+                           stroke-width="1.8" stroke-linejoin="round" />
+
+                        <circle cx="17" cy="16" r="2.5" stroke="#1F5A44" stroke-width="1.8" />
+                     </svg>
+                  </div>
+
+                  <!-- Content -->
+                  <div class="principle-content">
+                     <h3>Honest pricing</h3>
+
+                     <p>
+                        No fake countdowns, no inflated "was" prices. What you see is the real cost.
+                     </p>
+                  </div>
+
+               </div>
+            </div>
+
+         </div>
+      </div>
+   </section>
+   <!-- Principles Section End -->
+
+
+   <!-- Contact Info Start -->
+   <section class="contact-info">
+      <div class="container">
+         <div class="row align-items-center g-4">
+
+            <!-- Contact Form -->
+            <div class="col-12 col-lg-6">
+               <div class="contact-form">
+                  <h2>Send us a message</h2>
+
+                  <form>
+                     <div class="row g-3">
+
+                        <!-- Name -->
+                        <div class="col-12 col-sm-6">
+                           <label for="name">Name</label>
+                           <input type="text" id="name" placeholder="Your name">
+                        </div>
+
+                        <!-- Email -->
+                        <div class="col-12 col-sm-6">
+                           <label for="email">Email</label>
+                           <input type="email" id="email" placeholder="you@example.com">
+                        </div>
+
+                        <!-- Subject -->
+                        <div class="col-12">
+                           <label for="subject">Subject</label>
+
+                           <div class="select-wrapper">
+                              <select id="subject">
+                                 <option>Order enquiry</option>
+                                 <option>Support</option>
+                                 <option>General Question</option>
+                              </select>
+
+                              <i class="bi bi-chevron-down"></i>
+                           </div>
+                        </div>
+
+                        <!-- Message -->
+                        <div class="col-12">
+                           <label for="message">Message</label>
+                           <textarea id="message" rows="4"></textarea>
+                        </div>
+
+                        <!-- Button -->
+                        <div class="col-12">
+                           <button type="submit">
+                              Send message
+                           </button>
+                        </div>
+
+                     </div>
+                  </form>
+               </div>
+            </div>
+
+            <!-- Google Map -->
+            <div class="col-12 col-lg-6">
+               <div class="contact-map">
+                  <iframe
+                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3112.637527633241!2d-9.142684823469904!3d38.72225297175898!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd19331a61e4f33b%3A0x400ebbde49036d0!2sLisbon%2C%20Portugal!5e0!3m2!1sen!2sbd!4v1700000000000!5m2!1sen!2sbd"
+                     allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                  </iframe>
+               </div>
+            </div>
+
+         </div>
+      </div>
+   </section>
+   <!-- Contact Info End -->
+
+   <!-- NewsLetter Section Start-->
+   <section class="newsletter-section">
+      <div class="container">
+         <div class="newsletter">
+            <div class="newsletter__title">
+               <h3>Join the list</h3>
+               <h2>15% off your first order</h2>
+            </div>
+            <div class="newsletter__input-area">
+               <input type="text" placeholder="plancode@example.com">
+               <button type="button">Subscribe</button>
+            </div>
+         </div>
+      </div>
+   </section>
+   <!-- NewsLetter Section End-->
+
+   <!-- Footer Section Start -->
+   <footer class="footer-section py-5 px-3 px-lg-0">
+      <div class="container">
+         <div class="row g-5">
+            <!-- Footer About -->
+            <div class="col-lg-4 col-md-6">
+               <img src="../image/logo-white.png" alt="Footer Logo">
+               <p class="footer-description mt-4 mb-4">
+                  Considered essentials for everyday living —
+                  designed with restraint, made to last, priced
+                  fairly. Shipping worldwide from our studio.
+               </p>
+               <ul class="footer-social d-flex align-items-center gap-3 list-unstyled mb-0">
+                  <li>
+                     <a href="#"><i class="bi bi-instagram"></i></a>
+                  </li>
+                  <li>
+                     <a href="#"><i class="bi bi-facebook"></i></a>
+                  </li>
+                  <li>
+                     <a href="#"><i class="bi bi-pinterest"></i></a>
+                  </li>
+                  <li>
+                     <a href="#"><i class="bi bi-twitter-x"></i></a>
+                  </li>
+               </ul>
+            </div>
+
+            <!-- Shop -->
+            <div class="col-lg col-md-6">
+               <h3 class="footer-title">SHOP</h3>
+
+               <ul class="footer-links list-unstyled">
+                  <li><a href="#">New arrivals</a></li>
+                  <li><a href="#">Best sellers</a></li>
+                  <li><a href="#">Sale</a></li>
+                  <li><a href="#">Compare</a></li>
+                  <li><a href="#">Wishlist</a></li>
+               </ul>
+            </div>
+
+            <!-- Account -->
+            <div class="col-lg col-md-6">
+               <h3 class="footer-title">ACCOUNT</h3>
+
+               <ul class="footer-links list-unstyled">
+                  <li><a href="#">Sign in</a></li>
+                  <li><a href="#">Create account</a></li>
+                  <li><a href="#">Track order</a></li>
+                  <li><a href="#">Dashboard</a></li>
+               </ul>
+            </div>
+
+            <!-- Company -->
+            <div class="col-lg col-md-6">
+               <h3 class="footer-title">COMPANY</h3>
+
+               <ul class="footer-links list-unstyled">
+                  <li><a href="#">About us</a></li>
+                  <li><a href="#">Journal</a></li>
+                  <li><a href="#">Contact</a></li>
+                  <li><a href="#">FAQ</a></li>
+               </ul>
+            </div>
+
+            <!-- Legal -->
+            <div class="col-lg col-md-6">
+               <h3 class="footer-title">LEGAL</h3>
+               <ul class="footer-links list-unstyled">
+                  <li><a href="#">Privacy policy</a></li>
+                  <li><a href="#">Terms & conditions</a></li>
+                  <li><a href="#">Contact</a></li>
+                  <li><a href="#">Shipping & returns</a></li>
+               </ul>
+            </div>
+         </div>
+
+         <!-- Footer Bottom -->
+         <div
+            class="footer-bottom mt-5 pt-4 d-flex flex-column flex-lg-row align-items-center justify-content-between gap-3">
+            <p class="mb-0">
+               © 2026 Plan Code Deploy. All rights reserved.
+            </p>
+            <div class="payment-icons d-flex align-items-center gap-3">
+               <i class="bi bi-credit-card-2-front-fill"></i>
+               <i class="bi bi-paypal"></i>
+               <i class="bi bi-apple"></i>
+               <i class="bi bi-google"></i>
+            </div>
+         </div>
+      </div>
+   </footer>
+   <!-- Footer Section End -->
+
+   <!-- Bootstrap JS -->
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"> </script>
+   <!-- SwiperJS cdn link -->
+   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+   <script src="../script.js"></script>
+</body>
+
+</html>
