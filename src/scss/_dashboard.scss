@@ -1,0 +1,332 @@
+.account-dashboard {
+   --account-brand: var(--brandColor, #1f5a44);
+   --account-hover: var(--btnHoverColor, #0b5ed7);
+   --account-footer: var(--footerBgColor, #14161a);
+   --account-background: var(--bgColorTwo, #f2f0ea);
+   --account-text: #17211d;
+   --account-muted: #647067;
+   --account-border: #e8ece8;
+
+   padding-block: 3.5rem;
+   background: var(--account-background);
+   font-family: var(--interFont, Inter, sans-serif);
+
+   .account-dashboard__container {
+      max-width: 1440px;
+      padding-inline: 1rem;
+   }
+
+   .account-sidebar,
+   .metric-card,
+   .dashboard-panel {
+      background: #fff;
+      border: 1px solid var(--account-border);
+      border-radius: 1rem;
+      box-shadow: 0 4px 18px rgb(24 39 30 / 5%);
+   }
+
+   /* Sidebar */
+   .account-sidebar {
+      position: sticky;
+      top: 1.5rem;
+      padding: 1.25rem;
+   }
+
+   .account-sidebar__list {
+      display: flex;
+      flex-direction: column;
+      gap: .5rem;
+      margin: 0;
+      padding: 0;
+      list-style: none;
+   }
+
+   .account-sidebar__link {
+      display: block;
+      padding: .8rem 1rem;
+      border-radius: 999px;
+      color: var(--account-text);
+      font-size: .9rem;
+      text-decoration: none;
+      transition: color .2s ease, background-color .2s ease;
+
+      &:hover,
+      &:focus-visible {
+         color: var(--account-hover);
+      }
+
+      &.account-sidebar__link--active {
+         background: var(--account-footer);
+         color: #fff;
+      }
+   }
+
+   /* Dashboard Layout */
+   .account-content {
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+      min-width: 0;
+   }
+
+   /* Metric Cards */
+   .metric-card {
+      height: 100%;
+      padding: 1.5rem;
+      transition: transform .2s ease, box-shadow .2s ease;
+
+      &:hover {
+         transform: translateY(-3px);
+         box-shadow: 0 10px 28px rgb(24 39 30 / 9%);
+      }
+
+      .metric-card__label {
+         display: flex;
+         align-items: center;
+         gap: .5rem;
+         margin-bottom: .75rem;
+         color: var(--account-brand);
+         font-size: .72rem;
+         font-weight: 700;
+         letter-spacing: .12em;
+         text-transform: uppercase;
+
+         span {
+            width: 1rem;
+            height: 1px;
+            background: currentColor;
+         }
+      }
+
+      .metric-card__number {
+         margin-bottom: .25rem;
+         color: var(--account-text);
+         font-family: var(--frauncesFont, Fraunces, Georgia, serif);
+         font-size: clamp(2rem, 3vw, 2.5rem);
+         font-weight: 700;
+         letter-spacing: -.03em;
+         line-height: 1.2;
+      }
+
+      .metric-card__description {
+         margin: 0;
+         color: var(--account-muted);
+         font-size: .875rem;
+      }
+   }
+
+   /* Panels */
+   .dashboard-panel {
+      overflow: hidden;
+      min-width: 0;
+
+      .dashboard-panel__header {
+         display: flex;
+         align-items: center;
+         justify-content: space-between;
+         gap: 1rem;
+         padding: 1.25rem 1.5rem;
+         border-bottom: 1px solid var(--account-border);
+
+         h2 {
+            margin: 0;
+            color: var(--account-text);
+            font-size: 1.125rem;
+            font-weight: 700;
+         }
+      }
+
+      .dashboard-panel__title {
+         margin: 0 0 1.5rem;
+         color: var(--account-text);
+         font-size: 1.125rem;
+         font-weight: 700;
+      }
+   }
+
+   /* Text Buttons */
+   .text-action {
+      padding: 0;
+      border: 0;
+      background: transparent;
+      color: var(--brandColor);
+      font-size: .875rem;
+      font-weight: 600;
+      white-space: nowrap;
+      cursor: pointer;
+      transition: color .2s ease;
+
+      &:hover,
+      &:focus-visible {
+         color: #0d3f2b;
+      }
+   }
+
+   /* Orders Table */
+   .account-orders {
+      min-width: 650px;
+      vertical-align: middle;
+
+      > :not(caption)>*>* {
+         padding: 1rem 1.25rem;
+         border-bottom-color: var(--account-border);
+      }
+
+      thead th {
+         color: var(--account-muted);
+         font-size: .72rem;
+         font-weight: 700;
+         letter-spacing: .08em;
+         text-transform: uppercase;
+         white-space: nowrap;
+      }
+
+      tbody {
+         color: #34443a;
+         font-size: .875rem;
+         font-weight: 500;
+
+         tr {
+            transition: background-color .2s ease;
+
+            &:hover {
+               background: #f8faf8;
+            }
+
+            &:last-child td {
+               border-bottom: 0;
+            }
+         }
+      }
+
+      .account-orders__id,
+      .account-orders__total {
+         color: var(--account-text);
+         font-weight: 700;
+         white-space: nowrap;
+      }
+
+      .account-orders__date {
+         color: var(--account-muted);
+         white-space: nowrap;
+      }
+   }
+
+   /* Order Status */
+   .order-status {
+      display: inline-flex;
+      align-items: center;
+      padding: .35rem .7rem;
+      border-radius: 999px;
+      font-size: .68rem;
+      font-weight: 700;
+      letter-spacing: .06em;
+      white-space: nowrap;
+
+      &.order-status--delivered {
+         background: #dcfce7;
+         color: var(--brandColor);
+      }
+
+      &.order-status--shipped {
+         background: #e8f7ec;
+         color: var(--brandColor);
+      }
+
+      &.order-status--processing {
+         border: 1px solid #bbf7d0;
+         background: #f0fdf4;
+         color: var(--brandColor);
+      }
+   }
+
+   /* Account Form */
+   .account-form-panel {
+      padding: 1.5rem;
+
+      .account-form-label {
+         margin-bottom: .5rem;
+         color: var(--account-muted);
+         font-size: .72rem;
+         font-weight: 700;
+         letter-spacing: .08em;
+         text-transform: uppercase;
+      }
+
+      .account-form-control {
+         min-height: 48px;
+         padding: .75rem 1rem;
+         border: 1px solid #dce3dd;
+         border-radius: .75rem;
+         color: #34443a;
+         font-size: .875rem;
+         font-weight: 500;
+         box-shadow: none;
+         transition: border-color .2s ease, box-shadow .2s ease;
+
+         &:focus {
+            border-color: var(--account-brand);
+            box-shadow: 0 0 0 .2rem rgb(31 90 68 / 12%);
+         }
+      }
+
+      .account-form-panel__actions {
+         padding-top: 1.5rem;
+      }
+
+      .account-save-btn {
+         display: inline-flex;
+         align-items: center;
+         justify-content: center;
+         min-height: 48px;
+         padding: .75rem 1.5rem;
+         border: 0;
+         border-radius: .75rem;
+         background: var(--account-brand);
+         color: #fff;
+         font-size: .875rem;
+         font-weight: 600;
+         transition: background-color .2s ease, transform .2s ease;
+
+         &:hover,
+         &:focus-visible {
+            background: var(--account-hover);
+            color: #fff;
+         }
+
+         &:active {
+            transform: translateY(1px);
+         }
+      }
+   }
+
+   /* Desktop */
+   @media (min-width: 992px) {
+      padding-block: 5rem;
+
+      .account-dashboard__container {
+         padding-inline: 1.5rem;
+      }
+
+      .account-sidebar {
+         padding: 1.5rem;
+      }
+   }
+
+   /* Mobile */
+   @media (max-width: 575.98px) {
+      padding-block: 2rem;
+
+      .dashboard-panel__header {
+         padding: 1rem;
+      }
+
+      .account-form-panel {
+         padding: 1rem;
+      }
+
+      .account-orders> :not(caption)>*>* {
+         padding: .85rem 1rem;
+      }
+   }
+}

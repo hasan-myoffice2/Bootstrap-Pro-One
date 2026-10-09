@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Pro Num One</title>
+   <link rel="stylesheet" href="../src/css/main.css">
+   <!-- Swiper CDN LINK -->
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+   <!-- Bootstrap 5 CSS -->
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+   <!-- Bootstrap Icons -->
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+
+<body>
+
+   <!-- Navbar -->
+   <nav class="custom-navbar">
+      <div class="navbar-container d-flex align-items-center justify-content-between"> <!-- Mobile Menu Button -->
+         <button class="mobile-menu-btn"> <i class="bi bi-list"></i> </button> <!-- Logo -->
+         <a class="brand-name" href="/index.html"><img src="../image/BrandLogo.png" alt="Brand-logo"></a>
+         <!-- Desktop Menu -->
+         <ul class="main-menu list-unstyled align-items-center mb-0"> <!-- Home -->
+            <li> <a href="#" class="active"> Home <i class="bi bi-chevron-down chevron"></i> </a>
+               <ul class="custom-dropdown list-unstyled mb-0">
+                  <li> <a href="../Home/multipurpose.html" class="dropdown-item-custom"> Multipurpose Home </a> </li>
+                  <li> <a href="#" class="dropdown-item-custom"> Fashion Home </a> </li>
+                  <li> <a href="#" class="dropdown-item-custom"> Electronice Home </a> </li>
+               </ul>
+            </li> <!-- Shop -->
+            <li> <a href="#"> Shop <i class="bi bi-chevron-down chevron"></i> </a> <!-- Mega Menu -->
+               <div class="mega-menu">
+                  <div class="row g-4"> <!-- Column 1 -->
+                     <div class="col-3">
+                        <h2 class="mega-title"> SHOP LAYOUTS </h2>
+                        <ul class="mega-list">
+                           <li>Grid — left sidebar</li>
+                           <li>Grid — Right sidebar</li>
+                           <li>List View</li>
+                           <li>Product Details</li>
+                        </ul>
+                     </div> <!-- Column 2 -->
+                     <div class="col-3">
+                        <h2 class="mega-title"> SHOP TOOLS </h2>
+                        <ul class="mega-list">
+                           <li>Compare products</li>
+                           <li>Wishlist</li>
+                           <li>Shopping cart</li>
+                           <li>Checkout</li>
+                        </ul>
+                     </div> <!-- Column 3 -->
+                     <div class="col-3">
+                        <h2 class="mega-title"> CATEGORIES </h2>
+                        <ul class="mega-list">
+                           <li>Compare products</li>
+                           <li>Wishlist</li>
+                           <li>Shopping cart</li>
+                           <li>Checkout</li>
+                        </ul>
+                     </div> <!-- Image -->
+                     <div class="col-3"> <img src="../image/nav-img.jpg" alt="navImage" class="mega-image"> </div>
+                  </div>
+               </div>
+            </li> <!-- Pages -->
+            <li> <a href="#"> Pages <i class="bi bi-chevron-down chevron"></i> </a>
+               <ul class="custom-dropdown list-unstyled mb-0">
+                  <li> <a href="#" class="dropdown-item-custom"> About Us </a> </li>
+                  <li> <a href="#" class="dropdown-item-custom"> Contact Us </a> </li>
+                  <li> <a href="#" class="dropdown-item-custom"> FAQ </a> </li>
+                  <li> <a href="#" class="dropdown-item-custom"> 404 Error Page </a> </li>
+                  <li> <a href="#" class="dropdown-item-custom"> Checkout Flow </a> </li>
+               </ul>
+            </li> <!-- User -->
+            <li> <a href="#"> User <i class="bi bi-chevron-down chevron"></i> </a>
+               <ul class="custom-dropdown list-unstyled mb-0">
+                  <li> <a href="#" class="dropdown-item-custom"> Sign in </a> </li>
+                  <li> <a href="#" class="dropdown-item-custom"> Create Account </a> </li>
+                  <li> <a href="#" class="dropdown-item-custom"> Account Dashboard </a> </li>
+                  <li> <a href="#" class="dropdown-item-custom"> Order History </a> </li>
+                  <li> <a href="#" class="dropdown-item-custom"> Tracker order </a> </li>
+                  <li> <a href="#" class="dropdown-item-custom"> Wishlist </a> </li>
+               </ul>
+            </li> <!-- Blog -->
+            <li> <a href="#"> Blog <i class="bi bi-chevron-down chevron"></i> </a>
+               <ul class="custom-dropdown list-unstyled mb-0">
+                  <li> <a href="#" class="dropdown-item-custom"> Blog grid </a> </li>
+                  <li> <a href="#" class="dropdown-item-custom"> Blog list </a> </li>
+                  <li> <a href="#" class="dropdown-item-custom"> Blog details </a> </li>
+               </ul>
+            </li> <!-- Support -->
+            <li> <a href="#"> Support <i class="bi bi-chevron-down chevron"></i> </a>
+               <ul class="custom-dropdown list-unstyled mb-0">
+                  <li> <a href="#" class="dropdown-item-custom"> FAQ </a> </li>
+                  <li> <a href="#" class="dropdown-item-custom"> Contact us </a> </li>
+                  <li> <a href="#" class="dropdown-item-custom"> Track order </a> </li>
+               </ul>
+            </li> <!-- Legal -->
+            <li> <a href="#"> Legal <i class="bi bi-chevron-down chevron"></i> </a>
+               <ul class="custom-dropdown list-unstyled mb-0">
+                  <li> <a href="#" class="dropdown-item-custom"> Privacy policy </a> </li>
+                  <li> <a href="#" class="dropdown-item-custom"> Trams & conditions </a> </li>
+               </ul>
+            </li>
+         </ul> <!-- Navbar Actions -->
+         <div class="nav-actions"> <!-- Search -->
+            <div class="nav-action desktop-action"> <i class="bi bi-search"></i> </div> <!-- Wishlist -->
+            <div class="nav-action"> <i class="bi bi-heart"></i> <span class="badge-custom"> 3 </span> </div>
+            <!-- User -->
+            <div class="nav-action desktop-action"> <i class="bi bi-person"></i> </div> <!-- Cart -->
+            <div class="nav-action"> <i class="bi bi-bag"></i> <span class="badge-custom"> 2 </span> </div>
+         </div>
+      </div>
+   </nav>
+
+   <!-- Page Header Section Start -->
+   <section class="pageHeader py-5">
+      <div class="container">
+         <ul class="list-unstyled d-flex align-items-center gap-2 mb-0">
+            <li>
+               <a href="../index.html" class="text-secondary text-decoration-none font-interFont">
+                  Home
+               </a>
+            </li>
+            <li>
+               <i class="bi bi-chevron-right text-secondary"></i>
+            </li>
+            <li>
+               <a href="#" class="text-secondary text-decoration-none font-interFont">
+                  My Account
+               </a>
+            </li>
+         </ul>
+         <h2 class="h2 text-dark fw-semibold mt-2 mb-2">
+            Welcome back, September
+         </h2>
+         <p class="text-secondary font-interFont mb-0">
+            Manage orders, addresses and account details.
+         </p>
+      </div>
+   </section>
+   <!-- Page Header Section End -->
+
+
+   <!-- My Account Section Start -->
+   <section class="account-dashboard">
+      <div class="container-fluid account-dashboard__container">
+         <div class="row g-4">
+
+            <!-- Sidebar -->
+            <aside class="col-12 col-lg-4 col-xl-3">
+               <nav class="account-sidebar">
+                  <ul class="account-sidebar__list">
+                     <li>
+                        <a href="#dashboard" class="account-sidebar__link account-sidebar__link--active">
+                           Dashboard NovaShop
+                        </a>
+                     </li>
+                     <li><a href="#orders" class="account-sidebar__link">Order history</a></li>
+                     <li><a href="#track-order" class="account-sidebar__link">Track order</a></li>
+                     <li><a href="#wishlist" class="account-sidebar__link">Wishlist</a></li>
+                     <li><a href="#payment-methods" class="account-sidebar__link">Payment methods</a></li>
+                     <li><a href="#sign-out" class="account-sidebar__link">Sign out</a></li>
+                  </ul>
+               </nav>
+            </aside>
+
+            <!-- Dashboard Content -->
+            <div class="col-12 col-lg-8 col-xl-9">
+               <main class="account-content" id="dashboard">
+
+                  <!-- Metric Cards -->
+                  <div class="row g-4">
+
+                     <div class="col-12 col-sm-6 col-xl-4">
+                        <article class="metric-card">
+                           <div class="metric-card__label"><span></span> Orders</div>
+                           <div class="metric-card__number" id="dash-orders-counter" data-target="150">0</div>
+                           <p class="metric-card__description">Lifetime orders</p>
+                        </article>
+                     </div>
+
+                     <div class="col-12 col-sm-6 col-xl-4">
+                        <article class="metric-card">
+                           <div class="metric-card__label"><span></span> Wishlist</div>
+                           <div class="metric-card__number" id="dash-wishlist-counter" data-target="250">0</div>
+                           <p class="metric-card__description">Saved items</p>
+                        </article>
+                     </div>
+
+                     <div class="col-12 col-sm-12 col-xl-4">
+                        <article class="metric-card">
+                           <div class="metric-card__label"><span></span> Reward Points</div>
+                           <div class="metric-card__number" id="dash-points-counter" data-target="1240">0</div>
+                           <p class="metric-card__description">
+                              = $<span id="dash-credit-value">12.40</span> credit
+                           </p>
+                        </article>
+                     </div>
+
+                  </div>
+
+                  <!-- Recent Orders -->
+                  <section class="dashboard-panel" id="orders">
+                     <div class="dashboard-panel__header">
+                        <h2>Recent orders</h2>
+                        <button type="button" class="text-action" onclick="dashViewAllOrders()">
+                           View all
+                        </button>
+                     </div>
+
+                     <div class="table-responsive">
+                        <table class="table account-orders mb-0">
+                           <thead>
+                              <tr>
+                                 <th>Order</th>
+                                 <th>Date</th>
+                                 <th>Status</th>
+                                 <th>Total</th>
+                                 <th class="text-end">Action</th>
+                              </tr>
+                           </thead>
+
+                           <tbody>
+                              <tr>
+                                 <td class="account-orders__id">#NV-10432</td>
+                                 <td class="account-orders__date">Jul 2, 2026</td>
+                                 <td><span class="order-status order-status--delivered">DELIVERED</span></td>
+                                 <td class="account-orders__total">$149.00</td>
+                                 <td class="text-end">
+                                    <button type="button" class="text-action"
+                                       onclick="dashTrackOrder('#NV-10432', 'Delivered')">Track</button>
+                                 </td>
+                              </tr>
+
+                              <tr>
+                                 <td class="account-orders__id">#NV-10411</td>
+                                 <td class="account-orders__date">Jun 21, 2026</td>
+                                 <td><span class="order-status order-status--shipped">SHIPPED</span></td>
+                                 <td class="account-orders__total">$96.00</td>
+                                 <td class="text-end">
+                                    <button type="button" class="text-action"
+                                       onclick="dashTrackOrder('#NV-10411', 'Shipped')">Track</button>
+                                 </td>
+                              </tr>
+
+                              <tr>
+                                 <td class="account-orders__id">#NV-10390</td>
+                                 <td class="account-orders__date">Jun 3, 2026</td>
+                                 <td><span class="order-status order-status--processing">PROCESSING</span></td>
+                                 <td class="account-orders__total">$64.00</td>
+                                 <td class="text-end">
+                                    <button type="button" class="text-action"
+                                       onclick="dashTrackOrder('#NV-10390', 'Processing')">Track</button>
+                                 </td>
+                              </tr>
+                           </tbody>
+                        </table>
+                     </div>
+                  </section>
+
+                  <!-- Account Details -->
+                  <section class="dashboard-panel account-form-panel">
+                     <h2 class="dashboard-panel__title">Account details</h2>
+
+                     <form id="dash-account-form" onsubmit="dashHandleSave(event)">
+                        <div class="row g-4">
+
+                           <div class="col-12 col-sm-6">
+                              <label for="dash-firstname" class="form-label account-form-label">
+                                 First name
+                              </label>
+                              <input type="text" class="form-control account-form-control" id="dash-firstname"
+                                 name="firstname" value="Jane" required>
+                           </div>
+
+                           <div class="col-12 col-sm-6">
+                              <label for="dash-lastname" class="form-label account-form-label">
+                                 Last name
+                              </label>
+                              <input type="text" class="form-control account-form-control" id="dash-lastname"
+                                 name="lastname" value="Doe" required>
+                           </div>
+
+                           <div class="col-12 col-sm-6">
+                              <label for="dash-email" class="form-label account-form-label">Email</label>
+                              <input type="email" class="form-control account-form-control" id="dash-email" name="email"
+                                 value="jane.doe@example.com" required>
+                           </div>
+
+                           <div class="col-12 col-sm-6">
+                              <label for="dash-phone" class="form-label account-form-label">Phone</label>
+                              <input type="tel" class="form-control account-form-control" id="dash-phone" name="phone"
+                                 value="+1 555 010 2933" required>
+                           </div>
+
+                        </div>
+
+                        <div class="account-form-panel__actions">
+                           <button type="submit" id="dash-save-btn" class="btn account-save-btn">
+                              Save changes
+                           </button>
+                        </div>
+                     </form>
+                  </section>
+
+               </main>
+            </div>
+         </div>
+      </div>
+   </section>
+   <!-- My Account Section End -->
+
+   <!-- Footer Section Start -->
+   <footer class="footer-section py-5 px-3 px-lg-0">
+      <div class="container">
+         <div class="row g-5">
+            <!-- Footer About -->
+            <div class="col-lg-4 col-md-6">
+               <img src="../image/logo-white.png" alt="Footer Logo">
+               <p class="footer-description mt-4 mb-4">
+                  Considered essentials for everyday living —
+                  designed with restraint, made to last, priced
+                  fairly. Shipping worldwide from our studio.
+               </p>
+               <ul class="footer-social d-flex align-items-center gap-3 list-unstyled mb-0">
+                  <li>
+                     <a href="#"><i class="bi bi-instagram"></i></a>
+                  </li>
+                  <li>
+                     <a href="#"><i class="bi bi-facebook"></i></a>
+                  </li>
+                  <li>
+                     <a href="#"><i class="bi bi-pinterest"></i></a>
+                  </li>
+                  <li>
+                     <a href="#"><i class="bi bi-twitter-x"></i></a>
+                  </li>
+               </ul>
+            </div>
+
+            <!-- Shop -->
+            <div class="col-lg col-md-6">
+               <h3 class="footer-title">SHOP</h3>
+
+               <ul class="footer-links list-unstyled">
+                  <li><a href="#">New arrivals</a></li>
+                  <li><a href="#">Best sellers</a></li>
+                  <li><a href="#">Sale</a></li>
+                  <li><a href="#">Compare</a></li>
+                  <li><a href="#">Wishlist</a></li>
+               </ul>
+            </div>
+
+            <!-- Account -->
+            <div class="col-lg col-md-6">
+               <h3 class="footer-title">ACCOUNT</h3>
+
+               <ul class="footer-links list-unstyled">
+                  <li><a href="#">Sign in</a></li>
+                  <li><a href="#">Create account</a></li>
+                  <li><a href="#">Track order</a></li>
+                  <li><a href="#">Dashboard</a></li>
+               </ul>
+            </div>
+
+            <!-- Company -->
+            <div class="col-lg col-md-6">
+               <h3 class="footer-title">COMPANY</h3>
+
+               <ul class="footer-links list-unstyled">
+                  <li><a href="#">About us</a></li>
+                  <li><a href="#">Journal</a></li>
+                  <li><a href="#">Contact</a></li>
+                  <li><a href="#">FAQ</a></li>
+               </ul>
+            </div>
+
+            <!-- Legal -->
+            <div class="col-lg col-md-6">
+               <h3 class="footer-title">LEGAL</h3>
+               <ul class="footer-links list-unstyled">
+                  <li><a href="#">Privacy policy</a></li>
+                  <li><a href="#">Terms & conditions</a></li>
+                  <li><a href="#">Contact</a></li>
+                  <li><a href="#">Shipping & returns</a></li>
+               </ul>
+            </div>
+         </div>
+
+         <!-- Footer Bottom -->
+         <div
+            class="footer-bottom mt-5 pt-4 d-flex flex-column flex-lg-row align-items-center justify-content-between gap-3">
+            <p class="mb-0">
+               © 2026 Plan Code Deploy. All rights reserved.
+            </p>
+            <div class="payment-icons d-flex align-items-center gap-3">
+               <i class="bi bi-credit-card-2-front-fill"></i>
+               <i class="bi bi-paypal"></i>
+               <i class="bi bi-apple"></i>
+               <i class="bi bi-google"></i>
+            </div>
+         </div>
+      </div>
+   </footer>
+   <!-- Footer Section End -->
+
+   <script>
+
+      document.addEventListener("DOMContentLoaded", () => {
+         // =========================
+         // 1. Animated Dashboard Counters
+         // =========================
+         const counters = document.querySelectorAll(".metric-card__number");
+
+         const animateCounter = (counter) => {
+            const target = Number(counter.dataset.target);
+            const duration = 1500;
+            const startTime = performance.now();
+
+            const updateCounter = (currentTime) => {
+               const progress = Math.min((currentTime - startTime) / duration, 1);
+               const easedProgress = 1 - Math.pow(1 - progress, 3);
+
+               counter.textContent = Math.floor(target * easedProgress);
+
+               if (progress < 1) {
+                  requestAnimationFrame(updateCounter);
+               } else {
+                  counter.textContent = target.toLocaleString();
+               }
+            };
+
+            requestAnimationFrame(updateCounter);
+         };
+
+         const counterObserver = new IntersectionObserver((entries, observer) => {
+            entries.forEach((entry) => {
+               if (entry.isIntersecting) {
+                  animateCounter(entry.target);
+                  observer.unobserve(entry.target);
+               }
+            });
+         }, { threshold: 0.5 });
+
+         counters.forEach((counter) => counterObserver.observe(counter));
+      });
+   </script>
+
+   <!-- Bootstrap JS -->
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"> </script>
+   <!-- SwiperJS cdn link -->
+   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+   <script src="../script.js"></script>
+</body>
+
+</html>

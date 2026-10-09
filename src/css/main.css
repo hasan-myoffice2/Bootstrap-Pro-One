@@ -14981,5 +14981,309 @@ textarea.form-control-lg {
     font-size: 32px;
   }
 }
+.account-dashboard {
+  --account-brand: var(--brandColor, #1f5a44);
+  --account-hover: var(--btnHoverColor, #0b5ed7);
+  --account-footer: var(--footerBgColor, #14161a);
+  --account-background: var(--bgColorTwo, #f2f0ea);
+  --account-text: #17211d;
+  --account-muted: #647067;
+  --account-border: #e8ece8;
+  padding-block: 3.5rem;
+  background: var(--account-background);
+  font-family: var(--interFont, Inter, sans-serif);
+}
+.account-dashboard .account-dashboard__container {
+  max-width: 1440px;
+  padding-inline: 1rem;
+}
+.account-dashboard .account-sidebar,
+.account-dashboard .metric-card,
+.account-dashboard .dashboard-panel {
+  background: #fff;
+  border: 1px solid var(--account-border);
+  border-radius: 1rem;
+  box-shadow: 0 4px 18px rgba(24, 39, 30, 0.05);
+}
+.account-dashboard {
+  /* Sidebar */
+}
+.account-dashboard .account-sidebar {
+  position: sticky;
+  top: 1.5rem;
+  padding: 1.25rem;
+}
+.account-dashboard .account-sidebar__list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.account-dashboard .account-sidebar__link {
+  display: block;
+  padding: 0.8rem 1rem;
+  border-radius: 999px;
+  color: var(--account-text);
+  font-size: 0.9rem;
+  text-decoration: none;
+  transition: color 0.2s ease, background-color 0.2s ease;
+}
+.account-dashboard .account-sidebar__link:hover, .account-dashboard .account-sidebar__link:focus-visible {
+  color: var(--account-hover);
+}
+.account-dashboard .account-sidebar__link.account-sidebar__link--active {
+  background: var(--account-footer);
+  color: #fff;
+}
+.account-dashboard {
+  /* Dashboard Layout */
+}
+.account-dashboard .account-content {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  min-width: 0;
+}
+.account-dashboard {
+  /* Metric Cards */
+}
+.account-dashboard .metric-card {
+  height: 100%;
+  padding: 1.5rem;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.account-dashboard .metric-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 28px rgba(24, 39, 30, 0.09);
+}
+.account-dashboard .metric-card .metric-card__label {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 0.75rem;
+  color: var(--account-brand);
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+.account-dashboard .metric-card .metric-card__label span {
+  width: 1rem;
+  height: 1px;
+  background: currentColor;
+}
+.account-dashboard .metric-card .metric-card__number {
+  margin-bottom: 0.25rem;
+  color: var(--account-text);
+  font-family: var(--frauncesFont, Fraunces, Georgia, serif);
+  font-size: clamp(2rem, 3vw, 2.5rem);
+  font-weight: 700;
+  letter-spacing: -0.03em;
+  line-height: 1.2;
+}
+.account-dashboard .metric-card .metric-card__description {
+  margin: 0;
+  color: var(--account-muted);
+  font-size: 0.875rem;
+}
+.account-dashboard {
+  /* Panels */
+}
+.account-dashboard .dashboard-panel {
+  overflow: hidden;
+  min-width: 0;
+}
+.account-dashboard .dashboard-panel .dashboard-panel__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 1.25rem 1.5rem;
+  border-bottom: 1px solid var(--account-border);
+}
+.account-dashboard .dashboard-panel .dashboard-panel__header h2, .account-dashboard .dashboard-panel .dashboard-panel__header .h2 {
+  margin: 0;
+  color: var(--account-text);
+  font-size: 1.125rem;
+  font-weight: 700;
+}
+.account-dashboard .dashboard-panel .dashboard-panel__title {
+  margin: 0 0 1.5rem;
+  color: var(--account-text);
+  font-size: 1.125rem;
+  font-weight: 700;
+}
+.account-dashboard {
+  /* Text Buttons */
+}
+.account-dashboard .text-action {
+  padding: 0;
+  border: 0;
+  background: transparent;
+  color: var(--brandColor);
+  font-size: 0.875rem;
+  font-weight: 600;
+  white-space: nowrap;
+  cursor: pointer;
+  transition: color 0.2s ease;
+}
+.account-dashboard .text-action:hover, .account-dashboard .text-action:focus-visible {
+  color: #0d3f2b;
+}
+.account-dashboard {
+  /* Orders Table */
+}
+.account-dashboard .account-orders {
+  min-width: 650px;
+  vertical-align: middle;
+}
+.account-dashboard .account-orders > :not(caption) > * > * {
+  padding: 1rem 1.25rem;
+  border-bottom-color: var(--account-border);
+}
+.account-dashboard .account-orders thead th {
+  color: var(--account-muted);
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+.account-dashboard .account-orders tbody {
+  color: #34443a;
+  font-size: 0.875rem;
+  font-weight: 500;
+}
+.account-dashboard .account-orders tbody tr {
+  transition: background-color 0.2s ease;
+}
+.account-dashboard .account-orders tbody tr:hover {
+  background: #f8faf8;
+}
+.account-dashboard .account-orders tbody tr:last-child td {
+  border-bottom: 0;
+}
+.account-dashboard .account-orders .account-orders__id,
+.account-dashboard .account-orders .account-orders__total {
+  color: var(--account-text);
+  font-weight: 700;
+  white-space: nowrap;
+}
+.account-dashboard .account-orders .account-orders__date {
+  color: var(--account-muted);
+  white-space: nowrap;
+}
+.account-dashboard {
+  /* Order Status */
+}
+.account-dashboard .order-status {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.35rem 0.7rem;
+  border-radius: 999px;
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  white-space: nowrap;
+}
+.account-dashboard .order-status.order-status--delivered {
+  background: #dcfce7;
+  color: var(--brandColor);
+}
+.account-dashboard .order-status.order-status--shipped {
+  background: #e8f7ec;
+  color: var(--brandColor);
+}
+.account-dashboard .order-status.order-status--processing {
+  border: 1px solid #bbf7d0;
+  background: #f0fdf4;
+  color: var(--brandColor);
+}
+.account-dashboard {
+  /* Account Form */
+}
+.account-dashboard .account-form-panel {
+  padding: 1.5rem;
+}
+.account-dashboard .account-form-panel .account-form-label {
+  margin-bottom: 0.5rem;
+  color: var(--account-muted);
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+.account-dashboard .account-form-panel .account-form-control {
+  min-height: 48px;
+  padding: 0.75rem 1rem;
+  border: 1px solid #dce3dd;
+  border-radius: 0.75rem;
+  color: #34443a;
+  font-size: 0.875rem;
+  font-weight: 500;
+  box-shadow: none;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+.account-dashboard .account-form-panel .account-form-control:focus {
+  border-color: var(--account-brand);
+  box-shadow: 0 0 0 0.2rem rgba(31, 90, 68, 0.12);
+}
+.account-dashboard .account-form-panel .account-form-panel__actions {
+  padding-top: 1.5rem;
+}
+.account-dashboard .account-form-panel .account-save-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 48px;
+  padding: 0.75rem 1.5rem;
+  border: 0;
+  border-radius: 0.75rem;
+  background: var(--account-brand);
+  color: #fff;
+  font-size: 0.875rem;
+  font-weight: 600;
+  transition: background-color 0.2s ease, transform 0.2s ease;
+}
+.account-dashboard .account-form-panel .account-save-btn:hover, .account-dashboard .account-form-panel .account-save-btn:focus-visible {
+  background: var(--account-hover);
+  color: #fff;
+}
+.account-dashboard .account-form-panel .account-save-btn:active {
+  transform: translateY(1px);
+}
+.account-dashboard {
+  /* Desktop */
+}
+@media (min-width: 992px) {
+  .account-dashboard {
+    padding-block: 5rem;
+  }
+  .account-dashboard .account-dashboard__container {
+    padding-inline: 1.5rem;
+  }
+  .account-dashboard .account-sidebar {
+    padding: 1.5rem;
+  }
+}
+.account-dashboard {
+  /* Mobile */
+}
+@media (max-width: 575.98px) {
+  .account-dashboard {
+    padding-block: 2rem;
+  }
+  .account-dashboard .dashboard-panel__header {
+    padding: 1rem;
+  }
+  .account-dashboard .account-form-panel {
+    padding: 1rem;
+  }
+  .account-dashboard .account-orders > :not(caption) > * > * {
+    padding: 0.85rem 1rem;
+  }
+}
 
 /*# sourceMappingURL=main.css.map */
