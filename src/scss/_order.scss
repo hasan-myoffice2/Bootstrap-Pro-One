@@ -1,0 +1,212 @@
+@import "variable";
+
+
+
+.my-account-section {
+   background: var(--bgColorOne);
+   font-family: var(--interFont);
+   padding: 60px 0;
+
+   .custom-container {
+      max-width: 1280px;
+   }
+
+   .account-sidebar,
+   .order-wrapper {
+      background: #fff;
+      border-radius: 20px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+      box-shadow: var(--cardShadow);
+   }
+
+   .account-sidebar {
+      padding: 24px;
+      height: fit-content;
+
+      .account-menu {
+         display: flex;
+         flex-direction: column;
+         gap: 12px;
+         list-style: none;
+         padding: 0;
+         margin: 0;
+
+         li {
+            border-radius: 50px;
+            transition: all 0.3s ease;
+
+            a {
+               display: block;
+               padding: 10px 12px;
+               color: var(--footerBgColor, #14161a);
+               text-decoration: none;
+               transition: color 0.3s ease;
+            }
+
+            &:hover a {
+               color: var(--btnHoverColor, #0b5ed7);
+            }
+
+            &.active {
+               background: var(--footerBgColor, #14161a);
+
+               a {
+                  color: #fff;
+               }
+
+               &:hover a {
+                  color: var(--btnHoverColor, #0b5ed7);
+               }
+            }
+         }
+      }
+   }
+
+   .order-wrapper {
+      overflow: hidden;
+   }
+
+   .order-table {
+      min-width: 800px;
+      border-collapse: collapse;
+
+      > :not(caption)>*>* {
+         padding: 18px 16px;
+         vertical-align: middle;
+         border-bottom: 1px solid #d9dde3;
+         color: var(--footerBgColor, #14161a);
+         font-size: 13px;
+         background: transparent;
+      }
+
+      thead th {
+         padding-top: 28px;
+         padding-bottom: 28px;
+         font-size: 12px;
+         font-weight: 600;
+         text-transform: uppercase;
+         letter-spacing: 0.5px;
+         white-space: nowrap;
+      }
+
+      tbody tr:last-child td {
+         border-bottom: 0;
+      }
+
+      .order-number {
+         font-weight: 600;
+         white-space: nowrap;
+      }
+
+      .order-total {
+         font-size: 13px;
+         font-weight: 700;
+         color: #111;
+         white-space: nowrap;
+      }
+   }
+
+   .status {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 6px 12px;
+      border-radius: 50px;
+      font-family: var(--monospace);
+      font-size: var(--hoverFS);
+      line-height: 1.5;
+      text-transform: uppercase;
+      letter-spacing: 0.4px;
+      white-space: nowrap;
+
+      &.delivered {
+         background: #e8f1ec;
+         color: var(--brandColor);
+      }
+
+      &.shipped {
+         background: var(--btnHover);
+         color: #fff;
+      }
+
+      &.processing {
+         background: #eee;
+         color: #555;
+      }
+
+      &.cancelled {
+         background: #d83b2d;
+         color: #fff;
+      }
+   }
+
+   .order-btn {
+      display: inline-block;
+      padding: 9px 18px;
+      border: 1px solid #111;
+      border-radius: 50px;
+      background: transparent;
+      color: #111;
+      font-size: 12px;
+      font-weight: 600;
+      line-height: 1.5;
+      white-space: nowrap;
+      transition: all 0.3s ease;
+
+      &:hover {
+         background: #111;
+         color: #fff;
+      }
+   }
+
+   .mobile-orders {
+      .mobile-order {
+         padding: 20px;
+         border-bottom: 1px solid #d9dde3;
+
+         &:last-child {
+            border-bottom: 0;
+         }
+      }
+
+      .order-heading {
+         display: flex;
+         align-items: center;
+         justify-content: space-between;
+         gap: 10px;
+         margin-bottom: 20px;
+      }
+
+      .order-details {
+         margin-bottom: 4px;
+
+         p {
+            margin: 4px 0 0;
+            font-size: 13px;
+            color: var(--footerBgColor);
+         }
+
+         .detail-label {
+            color: #888;
+            font-size: 10px;
+            text-transform: uppercase;
+         }
+      }
+
+      .order-btn {
+         margin-top: 16px;
+      }
+   }
+
+   @media (min-width: 992px) {
+      padding: 100px 0;
+   }
+
+   @media (max-width: 767.98px) {
+      padding: 40px 0;
+
+      .account-sidebar {
+         padding: 18px;
+      }
+   }
+}

@@ -13,6 +13,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap");
 :root,
 [data-bs-theme=light] {
   --bs-blue: #0d6efd;
@@ -15283,6 +15286,278 @@ textarea.form-control-lg {
   }
   .account-dashboard .account-orders > :not(caption) > * > * {
     padding: 0.85rem 1rem;
+  }
+}
+
+:root {
+  --headerFS: 70px;
+  --primaryFS: 44px;
+  --peraFS: 17px;
+  --hoverHeaderFS: 16px;
+  --hoverFS: 14px;
+  --brandColor: #1f5a44;
+  --primaryColor: #262626;
+  --secondaryColor: #464a52;
+  --navBG: #faf9f6;
+  --bgOne: #f2f0ea;
+  --bgTwo: #faf9f6;
+  --cardBG: #ffffff;
+  --footerTextColor: #cfd2d6;
+  --primaryColor: #262626;
+  --footerBgColor: #14161A;
+  --btnHover: #0b5ed7;
+  --frauncesFont: "Fraunces", serif;
+  --interFont: "Inter", sans-serif;
+  --monospace: "Space Mono", monospace;
+  --NavShadow: 0 4px 16px rgba(0, 0, 0, 0.16);
+  --cardShadow: 0 8px 24px 0 rgba(0, 0, 0, 0.16);
+}
+
+.bestSellerPagination {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+}
+
+.bestSellerPagination .swiper-pagination-bullet {
+  width: 10px !important;
+  height: 10px !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  display: block;
+  border-radius: 999px;
+  background: #dedbd3;
+  opacity: 1;
+  cursor: pointer;
+  transition: width 0.35s ease, background-color 0.35s ease, transform 0.35s ease;
+}
+
+.bestSellerPagination .swiper-pagination-bullet:hover {
+  transform: scale(1.1);
+}
+
+.bestSellerPagination .swiper-pagination-bullet-active {
+  width: 30px !important;
+  height: 10px !important;
+  border-radius: 999px;
+  background: #17634d;
+  opacity: 1;
+}
+
+/* Swiper Pagination Container Alignment */
+.swiper-pagination {
+  position: relative !important;
+  bottom: 0 !important;
+  margin-top: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+}
+
+/* Inactive Dots (ছোট গোলাকার ডট) */
+.swiper-pagination-bullet {
+  width: 8px !important;
+  height: 8px !important;
+  background-color: #e5e7eb !important;
+  /* Light Gray */
+  opacity: 1 !important;
+  margin: 0 !important;
+  border-radius: 9999px !important;
+  transition: all 0.3s ease-in-out !important;
+  cursor: pointer;
+}
+
+/* Hover Effect on Inactive Dots */
+.swiper-pagination-bullet:hover {
+  background-color: #9ca3af !important;
+}
+
+/* Active Dot (সবুজ ক্যাপসুল / Pill Shape) */
+.swiper-pagination-bullet-active {
+  width: 24px !important;
+  /* পিল শেপের দৈর্ঘ্য */
+  height: 8px !important;
+  background-color: #1b4332 !important;
+  /* ছবির আসল ফরেস্ট গ্রিন কালার */
+  border-radius: 9999px !important;
+}
+
+.my-account-section {
+  background: var(--bgColorOne);
+  font-family: var(--interFont);
+  padding: 60px 0;
+}
+.my-account-section .custom-container {
+  max-width: 1280px;
+}
+.my-account-section .account-sidebar,
+.my-account-section .order-wrapper {
+  background: #fff;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+  box-shadow: var(--cardShadow);
+}
+.my-account-section .account-sidebar {
+  padding: 24px;
+  height: fit-content;
+}
+.my-account-section .account-sidebar .account-menu {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.my-account-section .account-sidebar .account-menu li {
+  border-radius: 50px;
+  transition: all 0.3s ease;
+}
+.my-account-section .account-sidebar .account-menu li a {
+  display: block;
+  padding: 10px 12px;
+  color: var(--footerBgColor, #14161a);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+.my-account-section .account-sidebar .account-menu li:hover a {
+  color: var(--btnHoverColor, #0b5ed7);
+}
+.my-account-section .account-sidebar .account-menu li.active {
+  background: var(--footerBgColor, #14161a);
+}
+.my-account-section .account-sidebar .account-menu li.active a {
+  color: #fff;
+}
+.my-account-section .account-sidebar .account-menu li.active:hover a {
+  color: var(--btnHoverColor, #0b5ed7);
+}
+.my-account-section .order-wrapper {
+  overflow: hidden;
+}
+.my-account-section .order-table {
+  min-width: 800px;
+  border-collapse: collapse;
+}
+.my-account-section .order-table > :not(caption) > * > * {
+  padding: 18px 16px;
+  vertical-align: middle;
+  border-bottom: 1px solid #d9dde3;
+  color: var(--footerBgColor, #14161a);
+  font-size: 13px;
+  background: transparent;
+}
+.my-account-section .order-table thead th {
+  padding-top: 28px;
+  padding-bottom: 28px;
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  white-space: nowrap;
+}
+.my-account-section .order-table tbody tr:last-child td {
+  border-bottom: 0;
+}
+.my-account-section .order-table .order-number {
+  font-weight: 600;
+  white-space: nowrap;
+}
+.my-account-section .order-table .order-total {
+  font-size: 13px;
+  font-weight: 700;
+  color: #111;
+  white-space: nowrap;
+}
+.my-account-section .status {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 6px 12px;
+  border-radius: 50px;
+  font-family: var(--monospace);
+  font-size: var(--hoverFS);
+  line-height: 1.5;
+  text-transform: uppercase;
+  letter-spacing: 0.4px;
+  white-space: nowrap;
+}
+.my-account-section .status.delivered {
+  background: #e8f1ec;
+  color: var(--brandColor);
+}
+.my-account-section .status.shipped {
+  background: var(--btnHover);
+  color: #fff;
+}
+.my-account-section .status.processing {
+  background: #eee;
+  color: #555;
+}
+.my-account-section .status.cancelled {
+  background: #d83b2d;
+  color: #fff;
+}
+.my-account-section .order-btn {
+  display: inline-block;
+  padding: 9px 18px;
+  border: 1px solid #111;
+  border-radius: 50px;
+  background: transparent;
+  color: #111;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 1.5;
+  white-space: nowrap;
+  transition: all 0.3s ease;
+}
+.my-account-section .order-btn:hover {
+  background: #111;
+  color: #fff;
+}
+.my-account-section .mobile-orders .mobile-order {
+  padding: 20px;
+  border-bottom: 1px solid #d9dde3;
+}
+.my-account-section .mobile-orders .mobile-order:last-child {
+  border-bottom: 0;
+}
+.my-account-section .mobile-orders .order-heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+.my-account-section .mobile-orders .order-details {
+  margin-bottom: 4px;
+}
+.my-account-section .mobile-orders .order-details p {
+  margin: 4px 0 0;
+  font-size: 13px;
+  color: var(--footerBgColor);
+}
+.my-account-section .mobile-orders .order-details .detail-label {
+  color: #888;
+  font-size: 10px;
+  text-transform: uppercase;
+}
+.my-account-section .mobile-orders .order-btn {
+  margin-top: 16px;
+}
+@media (min-width: 992px) {
+  .my-account-section {
+    padding: 100px 0;
+  }
+}
+@media (max-width: 767.98px) {
+  .my-account-section {
+    padding: 40px 0;
+  }
+  .my-account-section .account-sidebar {
+    padding: 18px;
   }
 }
 
