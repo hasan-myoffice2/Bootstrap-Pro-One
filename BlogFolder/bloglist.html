@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Pro Num One</title>
+   <link rel="stylesheet" href="../src/css/main.css">
+   <!-- Swiper CDN LINK -->
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+   <!-- Bootstrap 5 CSS -->
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+   <!-- Bootstrap Icons -->
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+
+<body>
+
+   <!-- Navbar -->
+   <nav class="custom-navbar">
+      <div class="navbar-container d-flex align-items-center justify-content-between"> <!-- Mobile Menu Button -->
+         <button class="mobile-menu-btn"> <i class="bi bi-list"></i> </button> <!-- Logo -->
+         <a class="brand-name" href="/index.html"><img src="../image/BrandLogo.png" alt="Brand-logo"></a>
+         <!-- Desktop Menu -->
+         <ul class="main-menu list-unstyled align-items-center mb-0"> <!-- Home -->
+            <li> <a href="#" class="active"> Home <i class="bi bi-chevron-down chevron"></i> </a>
+               <ul class="custom-dropdown list-unstyled mb-0">
+                  <li> <a href="../Home/multipurpose.html" class="dropdown-item-custom"> Multipurpose Home </a> </li>
+                  <li> <a href="#" class="dropdown-item-custom"> Fashion Home </a> </li>
+                  <li> <a href="#" class="dropdown-item-custom"> Electronice Home </a> </li>
+               </ul>
+            </li> <!-- Shop -->
+            <li> <a href="#"> Shop <i class="bi bi-chevron-down chevron"></i> </a> <!-- Mega Menu -->
+               <div class="mega-menu">
+                  <div class="row g-4"> <!-- Column 1 -->
+                     <div class="col-3">
+                        <h2 class="mega-title"> SHOP LAYOUTS </h2>
+                        <ul class="mega-list">
+                           <li>Grid — left sidebar</li>
+                           <li>Grid — Right sidebar</li>
+                           <li>List View</li>
+                           <li>Product Details</li>
+                        </ul>
+                     </div> <!-- Column 2 -->
+                     <div class="col-3">
+                        <h2 class="mega-title"> SHOP TOOLS </h2>
+                        <ul class="mega-list">
+                           <li>Compare products</li>
+                           <li>Wishlist</li>
+                           <li>Shopping cart</li>
+                           <li>Checkout</li>
+                        </ul>
+                     </div> <!-- Column 3 -->
+                     <div class="col-3">
+                        <h2 class="mega-title"> CATEGORIES </h2>
+                        <ul class="mega-list">
+                           <li>Compare products</li>
+                           <li>Wishlist</li>
+                           <li>Shopping cart</li>
+                           <li>Checkout</li>
+                        </ul>
+                     </div> <!-- Image -->
+                     <div class="col-3"> <img src="../image/nav-img.jpg" alt="navImage" class="mega-image"> </div>
+                  </div>
+               </div>
+            </li> <!-- Pages -->
+            <li> <a href="#"> Pages <i class="bi bi-chevron-down chevron"></i> </a>
+               <ul class="custom-dropdown list-unstyled mb-0">
+                  <li> <a href="#" class="dropdown-item-custom"> About Us </a> </li>
+                  <li> <a href="#" class="dropdown-item-custom"> Contact Us </a> </li>
+                  <li> <a href="#" class="dropdown-item-custom"> FAQ </a> </li>
+                  <li> <a href="#" class="dropdown-item-custom"> 404 Error Page </a> </li>
+                  <li> <a href="#" class="dropdown-item-custom"> Checkout Flow </a> </li>
+               </ul>
+            </li> <!-- User -->
+            <li> <a href="#"> User <i class="bi bi-chevron-down chevron"></i> </a>
+               <ul class="custom-dropdown list-unstyled mb-0">
+                  <li> <a href="#" class="dropdown-item-custom"> Sign in </a> </li>
+                  <li> <a href="#" class="dropdown-item-custom"> Create Account </a> </li>
+                  <li> <a href="#" class="dropdown-item-custom"> Account Dashboard </a> </li>
+                  <li> <a href="#" class="dropdown-item-custom"> Order History </a> </li>
+                  <li> <a href="#" class="dropdown-item-custom"> Tracker order </a> </li>
+                  <li> <a href="#" class="dropdown-item-custom"> Wishlist </a> </li>
+               </ul>
+            </li> <!-- Blog -->
+            <li> <a href="#"> Blog <i class="bi bi-chevron-down chevron"></i> </a>
+               <ul class="custom-dropdown list-unstyled mb-0">
+                  <li> <a href="#" class="dropdown-item-custom"> Blog grid </a> </li>
+                  <li> <a href="#" class="dropdown-item-custom"> Blog list </a> </li>
+                  <li> <a href="#" class="dropdown-item-custom"> Blog details </a> </li>
+               </ul>
+            </li> <!-- Support -->
+            <li> <a href="#"> Support <i class="bi bi-chevron-down chevron"></i> </a>
+               <ul class="custom-dropdown list-unstyled mb-0">
+                  <li> <a href="#" class="dropdown-item-custom"> FAQ </a> </li>
+                  <li> <a href="#" class="dropdown-item-custom"> Contact us </a> </li>
+                  <li> <a href="#" class="dropdown-item-custom"> Track order </a> </li>
+               </ul>
+            </li> <!-- Legal -->
+            <li> <a href="#"> Legal <i class="bi bi-chevron-down chevron"></i> </a>
+               <ul class="custom-dropdown list-unstyled mb-0">
+                  <li> <a href="#" class="dropdown-item-custom"> Privacy policy </a> </li>
+                  <li> <a href="#" class="dropdown-item-custom"> Trams & conditions </a> </li>
+               </ul>
+            </li>
+         </ul> <!-- Navbar Actions -->
+         <div class="nav-actions"> <!-- Search -->
+            <div class="nav-action desktop-action"> <i class="bi bi-search"></i> </div> <!-- Wishlist -->
+            <div class="nav-action"> <i class="bi bi-heart"></i> <span class="badge-custom"> 3 </span> </div>
+            <!-- User -->
+            <div class="nav-action desktop-action"> <i class="bi bi-person"></i> </div> <!-- Cart -->
+            <div class="nav-action"> <i class="bi bi-bag"></i> <span class="badge-custom"> 2 </span> </div>
+         </div>
+      </div>
+   </nav>
+
+   <!-- Page Header Section Start -->
+   <section class="pageHeader py-5">
+      <div class="container">
+         <ul class="list-unstyled d-flex align-items-center gap-2 mb-0">
+            <li>
+               <a href="../index.html" class="text-secondary text-decoration-none font-interFont">
+                  Home
+               </a>
+            </li>
+            <li>
+               <i class="bi bi-chevron-right text-secondary"></i>
+            </li>
+            <li>
+               <a href="#" class="text-secondary text-decoration-none font-interFont">
+                  Journal
+               </a>
+            </li>
+         </ul>
+         <h2 class="h2 text-dark fw-semibold mt-2 mb-2 font-interFont">
+            The Novena Journal
+         </h2>
+         <p>list view</p>
+      </div>
+   </section>
+   <!-- Page Header Section End -->
+
+   <!-- Blog List Section Start -->
+   <section class="blog-list-section">
+      <div class="container blog-container">
+
+         <!-- Blog Card 01 -->
+         <article class="blog-card">
+            <div class="blog-image">
+               <img src="https://images.unsplash.com/photo-1518770660439-4636190af475" alt="Circuit board">
+            </div>
+
+            <div class="blog-content">
+               <div class="blog-meta">
+                  <span class="meta-line"></span>
+                  <span>GUIDES</span>
+                  <span>·</span>
+                  <span>JUL 12, 2026</span>
+               </div>
+
+               <h2>A considered guide to layering for autumn</h2>
+
+               <p>
+                  Three foundational pieces, worn six different ways —
+                  our edit for the season ahead.
+               </p>
+            </div>
+         </article>
+
+         <!-- Blog Card 02 -->
+         <article class="blog-card">
+            <div class="blog-image">
+               <img src="https://images.unsplash.com/photo-1583394838336-acd977736f90" alt="Headphones and keyboard">
+            </div>
+
+            <div class="blog-content">
+               <div class="blog-meta">
+                  <span class="meta-line"></span>
+                  <span>STUDIO</span>
+                  <span>·</span>
+                  <span>JUL 3, 2026</span>
+               </div>
+
+               <h2>Behind the scenes of our biggest sale yet</h2>
+
+               <p>
+                  How we plan inventory, pricing and logistics
+                  for the Studio Sale each year.
+               </p>
+            </div>
+         </article>
+
+         <!-- Blog Card 03 -->
+         <article class="blog-card">
+            <div class="blog-image">
+               <img src="https://images.unsplash.com/photo-1497366754035-f200968a6e72" alt="Office workspace">
+            </div>
+
+            <div class="blog-content">
+               <div class="blog-meta">
+                  <span class="meta-line"></span>
+                  <span>REVIEWS</span>
+                  <span>·</span>
+                  <span>JUN 24, 2026</span>
+               </div>
+
+               <h2>Our wool overcoat, one winter later</h2>
+
+               <p>
+                  A long-term review after a full season of daily
+                  wear across three climates.
+               </p>
+            </div>
+         </article>
+
+         <!-- Pagination -->
+         <nav class="blog-pagination" aria-label="Blog pagination">
+            <button class="page-button active" aria-current="page">
+               1
+            </button>
+
+            <button class="page-button">
+               2
+            </button>
+         </nav>
+
+      </div>
+   </section>
+   <!-- Blog List Section End -->
+
+
+   <!-- Footer Section Start -->
+   <footer class="footer-section py-5 px-3 px-lg-0">
+      <div class="container">
+         <div class="row g-5">
+            <!-- Footer About -->
+            <div class="col-lg-4 col-md-6">
+               <img src="../image/logo-white.png" alt="Footer Logo">
+               <p class="footer-description mt-4 mb-4">
+                  Considered essentials for everyday living —
+                  designed with restraint, made to last, priced
+                  fairly. Shipping worldwide from our studio.
+               </p>
+               <ul class="footer-social d-flex align-items-center gap-3 list-unstyled mb-0">
+                  <li>
+                     <a href="#"><i class="bi bi-instagram"></i></a>
+                  </li>
+                  <li>
+                     <a href="#"><i class="bi bi-facebook"></i></a>
+                  </li>
+                  <li>
+                     <a href="#"><i class="bi bi-pinterest"></i></a>
+                  </li>
+                  <li>
+                     <a href="#"><i class="bi bi-twitter-x"></i></a>
+                  </li>
+               </ul>
+            </div>
+
+            <!-- Shop -->
+            <div class="col-lg col-md-6">
+               <h3 class="footer-title">SHOP</h3>
+
+               <ul class="footer-links list-unstyled">
+                  <li><a href="#">New arrivals</a></li>
+                  <li><a href="#">Best sellers</a></li>
+                  <li><a href="#">Sale</a></li>
+                  <li><a href="#">Compare</a></li>
+                  <li><a href="#">Wishlist</a></li>
+               </ul>
+            </div>
+
+            <!-- Account -->
+            <div class="col-lg col-md-6">
+               <h3 class="footer-title">ACCOUNT</h3>
+
+               <ul class="footer-links list-unstyled">
+                  <li><a href="#">Sign in</a></li>
+                  <li><a href="#">Create account</a></li>
+                  <li><a href="#">Track order</a></li>
+                  <li><a href="#">Dashboard</a></li>
+               </ul>
+            </div>
+
+            <!-- Company -->
+            <div class="col-lg col-md-6">
+               <h3 class="footer-title">COMPANY</h3>
+
+               <ul class="footer-links list-unstyled">
+                  <li><a href="#">About us</a></li>
+                  <li><a href="#">Journal</a></li>
+                  <li><a href="#">Contact</a></li>
+                  <li><a href="#">FAQ</a></li>
+               </ul>
+            </div>
+
+            <!-- Legal -->
+            <div class="col-lg col-md-6">
+               <h3 class="footer-title">LEGAL</h3>
+               <ul class="footer-links list-unstyled">
+                  <li><a href="#">Privacy policy</a></li>
+                  <li><a href="#">Terms & conditions</a></li>
+                  <li><a href="#">Contact</a></li>
+                  <li><a href="#">Shipping & returns</a></li>
+               </ul>
+            </div>
+         </div>
+
+         <!-- Footer Bottom -->
+         <div
+            class="footer-bottom mt-5 pt-4 d-flex flex-column flex-lg-row align-items-center justify-content-between gap-3">
+            <p class="mb-0">
+               © 2026 Plan Code Deploy. All rights reserved.
+            </p>
+            <div class="payment-icons d-flex align-items-center gap-3">
+               <i class="bi bi-credit-card-2-front-fill"></i>
+               <i class="bi bi-paypal"></i>
+               <i class="bi bi-apple"></i>
+               <i class="bi bi-google"></i>
+            </div>
+         </div>
+      </div>
+   </footer>
+   <!-- Footer Section End -->
+
+   <!-- Bootstrap JS -->
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"> </script>
+   <!-- SwiperJS cdn link -->
+   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+   <script src="../script.js"></script>
+</body>
+
+</html>
